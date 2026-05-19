@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AF Corporate Hub | المنصة الرئيسية الشاملة</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts (Cairo & Tajawal) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8fafc;
+            overflow-x: hidden;
+        }
+        
+        /* تأثيرات الـ Loader المخصصة */
+        .loader-active {
+            overflow: hidden;
+            height: 100vh;
+        }
+        @keyframes cube3D {
+            0% { transform: rotateY(0deg) rotateX(0deg) scale(0.9); }
+            50% { transform: rotateY(180deg) rotateX(10deg) scale(1.1); }
+            100% { transform: rotateY(360deg) rotateX(0deg) scale(1); }
+        }
+        @keyframes orangePulse {
+            0%, 100% { box-shadow: 0 0 20px rgba(249, 115, 22, 0.2); border-color: #1e3a8a; }
+            50% { box-shadow: 0 0 40px 20px rgba(249, 115, 22, 0.7); border-color: #f97316; }
+        }
+        .animate-cube {
+            animation: cube3D 2.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        }
+        .animate-pulse-glow {
+            animation: orangePulse 2s ease-in-out infinite;
+        }
+        .loader-slide-up {
+            transform: translateY(-100%);
+            transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+
+        /* كروت التوجيه الذكية */
+        .gateway-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .gateway-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 30px -10px rgba(10, 25, 47, 0.15);
+        }
+    </style>
+</head>
+<body class="loader-active">
+
+    <!-- 🎬 شاشة ترحيب البداية (The Intro Loader) -->
+    <div id="intro-loader" class="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center transition-all duration-1000">
+        <div class="relative p-6 rounded-full border-4 border-slate-900/10 animate-pulse-glow bg-white">
+            <!-- اللوجو داخل تأثير المكعب المرن -->
+            <img src="https://files.catbox.moe/z7c7hw.jpeg" alt="AF Logo" class="w-32 h-32 md:w-40 md:h-40 object-contain rounded-2xl animate-cube">
+        </div>
+        <div class="mt-6 text-center">
+            <h2 class="text-xl font-bold text-[#0A192F] tracking-wide">شركة AF التعليمية</h2>
+            <p class="text-sm text-orange-500 font-medium mt-1">بناء جيل عبقري ومتميز</p>
+        </div>
+    </div>
+
+    <!-- 🌐 الهيكل الرئيسي للموقع -->
+    <div id="main-content" class="opacity-0 transition-opacity duration-1000">
+        
+        <!-- الهيدر ونظام التنقل -->
+        <header class="bg-[#0A192F] text-white sticky top-0 z-40 shadow-lg border-b-2 border-orange-500">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <img src="https://files.catbox.moe/z7c7hw.jpeg" alt="AF Logo" class="w-12 h-12 rounded-lg border border-orange-500">
+                    <span class="text-xl font-black tracking-wider text-white">AF <span class="text-orange-500">Corporate Hub</span></span>
+                </div>
+                <nav class="hidden md:flex space-x-8 space-x-reverse font-medium">
+                    <a href="#hall-of-fame" class="hover:text-orange-500 transition-colors">معرض الأبطال</a>
+                    <a href="#experts" class="hover:text-orange-500 transition-colors">خبراء الشرح</a>
+                    <a href="#gateway-grid" class="hover:text-orange-500 transition-colors">بوابات التدريب</a>
+                    <a href="#contact" class="hover:text-orange-500 transition-colors">اتصل بنا</a>
+                </nav>
+                <a href="https://wa.me/201147447990" target="_blank" class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-full font-bold text-sm transition-all shadow-md flex items-center gap-2">
+                    <i class="fab fa-whatsapp text-lg"></i> تسجيل سريع
+                </a>
+            </div>
+        </header>
+
+        <!-- 🚀 قسم البانر الترحيبي الرئيسي -->
+        <section class="relative bg-gradient-to-br from-[#0A192F] to-[#1e3a8a] text-white py-20 px-6 text-center overflow-hidden">
+            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            <div class="container mx-auto max-w-4xl relative z-10">
+                <span class="bg-orange-500/20 text-orange-400 font-bold px-4 py-1.5 rounded-full text-xs uppercase tracking-widest border border-orange-500/30">الموقع الرئيسي الشامل</span>
+                <h1 class="text-4xl md:text-6xl font-black mt-6 leading-tight">الهرم الإعلاني والتعليمي الأول <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-500">لبراند AF العالمي</span></h1>
+                <p class="text-slate-300 mt-6 text-lg max-w-2xl mx-auto leading-relaxed">منصة متكاملة تجمع أقوى المسارات التدريبية المتطورة لبناء مهارات الذكاء، الحساب الذهني، وتكنولوجيا المعلومات بأساليب علمية حديثة.</p>
+                <div class="mt-10 flex flex-wrap justify-center gap-4">
+                    <a href="#gateway-grid" class="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition-transform hover:-translate-y-0.5">اكتشف مساراتنا التعليمية</a>
+                    <a href="https://www.facebook.com/share/1DsjavEqtk/" target="_blank" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold px-8 py-4 rounded-xl transition-transform hover:-translate-y-0.5 flex items-center gap-2">
+                        <i class="fab fa-facebook text-blue-500 text-lg"></i> تابع جديدنا على فيسبوك
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 📸 معرض الأبطال والمكرمين (Hall of Fame) -->
+        <section id="hall-of-fame" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-black text-[#0A192F]">🏆 معرض الأبطال والمكرمين <span class="text-orange-500">(Hall of Fame)</span></h2>
+                    <div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+                    <p class="text-slate-600 mt-4 font-medium">لحظات فخر حقيقية لطلابنا المتميزين بملابس الأكاديمية الرسمية أثناء تتويجهم بأرفع الكؤوس والشهادات الدولية.</p>
+                </div>
+
+                <!-- ألبوم تفاعلي متحرك -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- كارت بطل 1 -->
+                    <div class="group relative bg-slate-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
+                        <div class="overflow-hidden aspect-square bg-slate-200 relative">
+                            <!-- تم وضع أبعاد صورة رمزية احترافية، قم باستبدال المصدر بصور الطلاب الحقيقية -->
+                            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80" alt="تكريم أبطال AF" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0A192F] via-transparent to-transparent opacity-80"></div>
+                            <span class="absolute bottom-4 right-4 bg-orange-500 text-white font-bold text-xs px-3 py-1 rounded-full shadow-md">المركز الأول دولياً</span>
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="font-bold text-lg text-[#0A192F]">كأس التميز في الحساب الذهني</h3>
+                            <p class="text-slate-500 text-sm mt-1">تسليم الدروع والشهادات الكبرى لعام 2026</p>
+                        </div>
+                    </div>
+                    <!-- كارت بطل 2 -->
+                    <div class="group relative bg-slate-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
+                        <div class="overflow-hidden aspect-square bg-slate-200 relative">
+                            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=600&q=80" alt="تكريم أبطال AF" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0A192F] via-transparent to-transparent opacity-80"></div>
+                            <span class="absolute bottom-4 right-4 bg-amber-500 text-white font-bold text-xs px-3 py-1 rounded-full shadow-md">عباقرة الفيديك ميث</span>
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="font-bold text-lg text-[#0A192F]">التتويج بالملابس الرسمية</h3>
+                            <p class="text-slate-500 text-sm mt-1">فخر أولياء الأمور وثقة تتجدد دائماً</p>
+                        </div>
+                    </div>
+                    <!-- كارت بطل 3 -->
+                    <div class="group relative bg-slate-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
+                        <div class="overflow-hidden aspect-square bg-slate-200 relative">
+                            <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=600&q=80" alt="تكريم أبطال AF" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0A192F] via-transparent to-transparent opacity-80"></div>
+                            <span class="absolute bottom-4 right-4 bg-orange-500 text-white font-bold text-xs px-3 py-1 rounded-full shadow-md">اختبارات IQ العالمية</span>
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="font-bold text-lg text-[#0A192F]">الحصول على الدرجات النهائية</h3>
+                            <p class="text-slate-500 text-sm mt-1">مهارات تفوق وتطوير مستمر للذكاء</p>
+                        </div>
+                    </div>
+                    <!-- كارت بطل 4 -->
+                    <div class="group relative bg-slate-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
+                        <div class="overflow-hidden aspect-square bg-slate-200 relative">
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80" alt="تكريم أبطال AF" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0A192F] via-transparent to-transparent opacity-80"></div>
+                            <span class="absolute bottom-4 right-4 bg-amber-500 text-white font-bold text-xs px-3 py-1 rounded-full shadow-md">أبطال الرخص الدولية ICDL</span>
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="font-bold text-lg text-[#0A192F]">اعتمادات دولية مشرفة</h3>
+                            <p class="text-slate-500 text-sm mt-1">تجهيز تكنولوجي متكامل لقادة المستقبل</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🧑‍🏫 قسم المحاضرين وحيوية الشرح (Meet Our Experts) -->
+        <section id="experts" class="py-20 bg-slate-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-black text-[#0A192F]">🧑‍🏫 الطاقم التعليمي وحيوية الشرح <span class="text-orange-500">(Meet Our Experts)</span></h2>
+                    <div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+                    <p class="text-slate-600 mt-4 font-medium">نخبة من أقوى المحاضرين والخبراء يقدمون تجربة تفاعلية حية ومباشرة عبر الشاشات الذكية المتطورة لضمان أعلى مستويات الفهم.</p>
+                </div>
+
+                <!-- كروت عريضة واحترافية للمحاضرين -->
+                <div class="space-y-8 max-w-5xl mx-auto">
+                    <!-- المحاضر 1 -->
+                    <div class="bg-white rounded-3xl p-6 md:p-8 shadow-md flex flex-col md:flex-row items-center gap-8 border-r-8 border-orange-500 hover:shadow-xl transition-shadow">
+                        <div class="w-full md:w-1/3 aspect-[4/3] rounded-2xl overflow-hidden bg-slate-200">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="الشرح الفعلي على الشاشات الذكية" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-full md:w-2/3 text-right">
+                            <span class="text-orange-500 font-bold text-sm bg-orange-50/80 px-3 py-1 rounded-md">خبير التدريب التفاعلي</span>
+                            <h3 class="text-2xl font-bold text-[#0A192F] mt-2">احترافية الشرح والأدوات الذكية</h3>
+                            <p class="text-slate-600 mt-3 leading-relaxed">تعتمد أكاديمية AF على دمج الشاشات التفاعلية وعروض المحاكاة ثلاثية الأبعاد لتبسيط المفاهيم الرياضية والبرمجية المعقدة، مما يجعل المحاضرة تجربة ممتعة وحيوية تثير شغف الطلاب.</p>
+                            <div class="mt-4 flex gap-4 text-slate-400 text-sm">
+                                <span><i class="fas fa-desktop text-orange-500 ml-1"></i> شاشات ذكية بالكامل</span>
+                                <span><i class="fas fa-brain text-orange-500 ml-1"></i> أساليب تحفيز تفاعلية</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- المحاضر 2 -->
+                    <div class="bg-white rounded-3xl p-6 md:p-8 shadow-md flex flex-col md:flex-row-reverse items-center gap-8 border-l-8 border-[#0A192F] hover:shadow-xl transition-shadow">
+                        <div class="w-full md:w-1/3 aspect-[4/3] rounded-2xl overflow-hidden bg-slate-200">
+                            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80" alt="التدريب العملي للطلاب" class="w-full h-full object-cover">
+                        </div>
+                        <div class="w-full md:w-2/3 text-right">
+                            <span class="text-[#0A192F] font-bold text-sm bg-slate-100 px-3 py-1 rounded-md">المتابعة الفردية الفعّالة</span>
+                            <h3 class="text-2xl font-bold text-[#0A192F] mt-2">كفاءة وقوة الطاقم التعليمي لشركة AF</h3>
+                            <p class="text-slate-600 mt-3 leading-relaxed">كل محاضر لدينا تم تدريبه واعتماده على أعلى المستويات العالمية. نركز على الفروق الفردية ونضمن خروج كل طالب من القاعة التدريبية وهو يمتلك المهارة العملية الكاملة بنسبة 100%.</p>
+                            <div class="mt-4 flex gap-4 text-slate-400 text-sm">
+                                <span><i class="fas fa-graduation-cap text-blue-900 ml-1"></i> طاقم معتمد دولياً</span>
+                                <span><i class="fas fa-check-circle text-blue-900 ml-1"></i> قياس أداء دوري لكل طالب</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🔀 بوابة التوجيه الذكية (The Gateway Grid) -->
+        <section id="gateway-grid" class="py-20 bg-white relative">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-black text-[#0A192F]">🔀 بوابة التوجيه الذكية <span class="text-orange-500">(The Gateway Grid)</span></h2>
+                    <div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+                    <p class="text-slate-600 mt-4 font-medium">اختر مجالك التدريبي المفضل وانتقل فوراً بضغطة واحدة وبسلاسة فائقة إلى منصته المستقلة الخاصة.</p>
+                </div>
+
+                <!-- شبكة الكروت الـ 5 الفخمة -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto justify-center">
+                    
+                    <!-- المجال 1 -->
+                    <a href="https://sfman25.github.io/AF-M.A.S-1/" target="_blank" class="gateway-card group bg-gradient-to-b from-white to-slate-50 border border-slate-200/80 p-8 rounded-3xl relative overflow-hidden flex flex-col justify-between">
+                        <div class="absolute top-0 left-0 w-32 h-32 bg-orange-500/5 rounded-br-full transition-all group-hover:bg-orange-500/10"></div>
+                        <div>
+                            <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center text-orange-600 text-2xl mb-6 shadow-sm">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-[#0A192F] group-hover:text-orange-500 transition-colors">برنامج الحساب الذهني</h3>
+                            <p class="text-slate-500 mt-3 text-sm leading-relaxed">تطوير سرعة وبراعة العمليات الحسابية للأطفال بدون آلة حاسبة لتنشيط فصي الدماغ.</p>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between text-sm font-bold text-orange-500">
+                            <span>زيارة المنصة المستقلة</span>
+                            <i class="fas fa-arrow-left transition-transform group-hover:-translate-x-2"></i>
+                        </div>
+                    </a>
+
+                    <!-- المجال 2 -->
+                    <a href="https://sfman25.github.io/MATH_VEDIC2/" target="_blank" class="gateway-card group bg-gradient-to-b from-white to-slate-50 border border-slate-200/80 p-8 rounded-3xl relative overflow-hidden flex flex-col justify-between">
+                        <div class="absolute top-0 left-0 w-32 h-32 bg-blue-900/5 rounded-br-full transition-all group-hover:bg-blue-900/10"></div>
+                        <div>
+                            <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-900 text-2xl mb-6 shadow-sm">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-[#0A192F] group-hover:text-blue-900 transition-colors">الفيديك ميث - المستوى 2</h3>
+                            <p class="text-slate-500 mt-3 text-sm leading-relaxed">الرياضيات الهندية القديمة لتسريع حل المسائل الرياضية بطرق عبقرية مذهلة وثقة تامة.</p>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between text-sm font-bold text-blue-900">
+                            <span>زيارة المنصة المستقلة</span>
+                            <i class="fas fa-arrow-left transition-transform group-hover:-translate-x-2"></i>
+                        </div>
+                    </a>
+
+                    <!-- المجال 3 -->
+                    <a href="https://sfman25.github.io/MATH_VEDIC-3/" target="_blank" class="gateway-card group bg-gradient-to-b from-white to-slate-50 border border-slate-200/80 p-8 rounded-3xl relative overflow-hidden flex flex-col justify-between">
+                        <div class="absolute top-0 left-0 w-32 h-32 bg-orange-500/5 rounded-br-full transition-all group-hover:bg-orange-500/10"></div>
+                        <div>
+                            <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center text-orange-600 text-2xl mb-6 shadow-sm">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-[#0A192F] group-hover:text-orange-500 transition-colors">الفيديك ميث - المستوى 3</h3>
+                            <p class="text-slate-500 mt-3 text-sm leading-relaxed">المستوى المتقدم للأشكال والمعادلات الرياضية الكبرى التي تبني العبقرية الحقيقية.</p>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between text-sm font-bold text-orange-500">
+                            <span>زيارة المنصة المستقلة</span>
+                            <i class="fas fa-arrow-left transition-transform group-hover:-translate-x-2"></i>
+                        </div>
+                    </a>
+
+                    <!-- المجال 4 -->
+                    <a href="https://sfman25.github.io/AF-IQ-Tests-4/" target="_blank" class="gateway-card group bg-gradient-to-b from-white to-slate-50 border border-slate-200/80 p-8 rounded-3xl relative overflow-hidden flex flex-col justify-between md:col-shadow">
+                        <div class="absolute top-0 left-0 w-32 h-32 bg-blue-900/5 rounded-br-full transition-all group-hover:bg-blue-900/10"></div>
+                        <div>
+                            <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-900 text-2xl mb-6 shadow-sm">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-[#0A192F] group-hover:text-blue-900 transition-colors">منصة اختبارات الذكاء IQ</h3>
+                            <p class="text-slate-500 mt-3 text-sm leading-relaxed">قياس وتطوير القدرات الذهنية، مهارات التحليل المنطقي والذكاء البصري الفائق للمتدربين.</p>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between text-sm font-bold text-blue-900">
+                            <span>زيارة المنصة المستقلة</span>
+                            <i class="fas fa-arrow-left transition-transform group-hover:-translate-x-2"></i>
+                        </div>
+                    </a>
+
+                    <!-- المجال 5 -->
+                    <a href="https://sfman25.github.io/ICDL-5/" target="_blank" class="gateway-card group bg-gradient-to-b from-white to-slate-50 border border-slate-200/80 p-8 rounded-3xl relative overflow-hidden flex flex-col justify-between lg:col-span-1">
+                        <div class="absolute top-0 left-0 w-32 h-32 bg-orange-500/5 rounded-br-full transition-all group-hover:bg-orange-500/10"></div>
+                        <div>
+                            <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center text-orange-600 text-2xl mb-6 shadow-sm">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-[#0A192F] group-hover:text-orange-500 transition-colors">بوابة كورسات ICDL</h3>
+                            <p class="text-slate-500 mt-3 text-sm leading-relaxed">تأهيل شامل لقيادة الحاسب الآلي والبرمجيات المكتبية الأساسية لمتطلبات العصر الحديث والوظائف.</p>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between text-sm font-bold text-orange-500">
+                            <span>زيارة المنصة المستقلة</span>
+                            <i class="fas fa-arrow-left transition-transform group-hover:-translate-x-2"></i>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ☎️ قسم التواصل المباشر والتفاعل الفوري -->
+        <section id="contact" class="py-16 bg-[#0A192F] text-white">
+            <div class="container mx-auto px-6 text-center max-w-3xl">
+                <h2 class="text-3xl font-black mb-4">انضم إلينا الآن واصنع مستقبل عبقريتك اليوم!</h2>
+                <p class="text-slate-300 mb-10 text-sm md:text-base">تواصل معنا فوراً للاستفسارات، الحجوزات أو لمعرفة أقرب فروعنا والاشتراكات المتاحة.</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center items-center">
+                    <!-- واتساب 1 -->
+                    <a href="https://wa.me/201147447990" target="_blank" class="flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 px-6 rounded-2xl shadow-md transition-all hover:-translate-y-1">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                        <div class="text-right">
+                            <span class="block text-xs font-medium text-emerald-200">الدعم الرئيسي</span>
+                            <span class="text-sm">01147447990</span>
+                        </div>
+                    </a>
+                    <!-- واتساب 2 -->
+                    <a href="https://wa.me/201064038736" target="_blank" class="flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 px-6 rounded-2xl shadow-md transition-all hover:-translate-y-1">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                        <div class="text-right">
+                            <span class="block text-xs font-medium text-emerald-200">إدارة الحجوزات</span>
+                            <span class="text-sm">01064038736</span>
+                        </div>
+                    </a>
+                    <!-- فيسبوك -->
+                    <a href="https://www.facebook.com/share/1DsjavEqtk/" target="_blank" class="flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-2xl shadow-md transition-all hover:-translate-y-1 sm:col-span-2 md:col-span-1">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                        <div class="text-right">
+                            <span class="block text-xs font-medium text-blue-200">الصفحة الرسمية</span>
+                            <span class="text-sm">تابعنا على Facebook</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🏢 الفوتر (Footer) -->
+        <footer class="bg-slate-950 text-slate-400 py-8 text-center text-sm border-t border-slate-900">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="flex items-center gap-2">
+                    <img src="https://files.catbox.moe/z7c7hw.jpeg" alt="AF" class="w-8 h-8 rounded border border-orange-500/50">
+                    <p>© 2026 جميع الحقوق محفوظة لشركة <span class="text-white font-bold">AF Corporate Hub</span>.</p>
+                </div>
+                <div class="flex space-x-4 space-x-reverse">
+                    <a href="https://www.facebook.com/share/1DsjavEqtk/" target="_blank" class="hover:text-white transition-colors text-lg"><i class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/201147447990" target="_blank" class="hover:text-white transition-colors text-lg"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- 💡 كود الجافا سكريبت للتحكم بالشاشة الافتتاحية والمؤثرات حركية -->
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const loader = document.getElementById('intro-loader');
+            const mainContent = document.getElementById('main-content');
+
+            // تنفيذ سيناريو الشاشة الترحيبية: انتهاء الحركات التفاعلية للوجو ثم الرفع للأعلى
+            setTimeout(() => {
+                // إضافة كلاس الاختفاء للأعلى
+                loader.classList.add('loader-slide-up');
+                
+                // إظهار المحتوى الرئيسي بسلاسة وفك تجميد الشاشة
+                mainContent.classList.remove('opacity-0');
+                document.body.classList.remove('loader-active');
+                
+                // إزالة الشاشة الترحيبية تماماً من الكود بعد انتهاء الحركة
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 800);
+            }, 3000); // 3 ثوانٍ لعرض تفاصيل المكعب ونبض الإضاءة بدقة وعناية
+        });
+    </script>
+</body>
+</html>
