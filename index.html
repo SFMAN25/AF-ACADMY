@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AF Corporate Hub | المنصة الرئيسية الشاملة</title>
-    <!-- Tailwind CSS CDN -->
+    <title>AF TECH MATH | المنصة الرئيسية الشاملة</title>
+    <!-- Tailwind CSS v4 CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Google Fonts (Cairo) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,183 +16,184 @@
     <style>
         body {
             font-family: 'Cairo', sans-serif;
-            background-color: #060b13;
-            color: #f1f5f9;
+            background-color: #060b16;
+            color: #f8fafc;
             overflow-x: hidden;
         }
         
-        /* تأثيرات الشاشة الترحيبية الممتازة */
-        .loader-active {
+        /* 🎬 شاشة ترحيب البداية الفاخرة (Intro Loader) */
+        .loader-locked {
             overflow: hidden;
             height: 100vh;
         }
         
-        @keyframes rubik3D {
-            0% { transform: rotateY(0deg) rotateX(0deg) scale(0.95); }
-            50% { transform: rotateY(180deg) rotateX(15deg) scale(1.05); }
-            100% { transform: rotateY(360deg) rotateX(0deg) scale(0.95); }
+        @keyframes rubikRotation3D {
+            0% { transform: rotateX(0deg) rotateY(0deg) scale(0.9); }
+            35% { transform: rotateX(180deg) rotateY(90deg) scale(1.05); }
+            70% { transform: rotateX(270deg) rotateY(270deg) scale(0.95); }
+            100% { transform: rotateX(360deg) rotateY(360deg) scale(0.9); }
         }
         
-        @keyframes orangeGlowPulse {
+        @keyframes orangeGlowingPulse {
             0%, 100% { 
-                box-shadow: 0 0 20px rgba(249, 115, 22, 0.2); 
-                border-color: #0b1e3d; 
+                box-shadow: 0 0 20px rgba(249, 115, 22, 0.15); 
+                border-color: #0b192f; 
             }
             50% { 
-                box-shadow: 0 0 40px 20px rgba(249, 115, 22, 0.65); 
+                box-shadow: 0 0 50px 25px rgba(249, 115, 22, 0.7); 
                 border-color: #f97316; 
             }
         }
         
-        .animate-cube-3d {
-            animation: rubik3D 2.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-            transform-style: preserve-3d;
-            perspective: 1000px;
+        .cube-3d-animation {
+            animation: rubikRotation3D 2.8s cubic-bezier(0.64, 0.04, 0.35, 1) infinite;
         }
         
-        .animate-pulse-glow {
-            animation: orangeGlowPulse 1.8s ease-in-out infinite;
+        .pulse-border-navy {
+            animation: orangeGlowingPulse 2s ease-in-out infinite;
         }
         
-        .loader-slide-up {
+        .loader-exit-animation {
             transform: translateY(-100%);
-            transition: transform 0.85s cubic-bezier(0.77, 0, 0.175, 1);
+            transition: transform 1.1s cubic-bezier(0.85, 0, 0.15, 1);
         }
 
-        /* بوابات التوجيه الذكية الفخمة */
-        .gateway-card {
-            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-            background: linear-gradient(145deg, #0e1726 0%, #080d16 100%);
+        /* 🔀 كروت بوابة التوجيه الذكية (Gateway Cards) */
+        .gateway-item {
+            transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+            background: linear-gradient(135deg, rgba(11, 22, 44, 0.9) 0%, rgba(6, 11, 22, 0.95) 100%);
         }
-        .gateway-card:hover {
-            transform: translateY(-12px);
-            box-shadow: 0 20px 40px -15px rgba(249, 115, 22, 0.25);
+        .gateway-item:hover {
+            transform: translateY(-14px) scale(1.03);
+            box-shadow: 0 35px 60px -20px rgba(249, 115, 22, 0.3);
             border-color: #f97316;
         }
         
-        /* تلميع كروت معرض الأبطال */
+        /* 📸 معرض الصور الاحترافي */
         .gallery-card img {
-            transition: transform 0.5s ease;
+            transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
         }
         .gallery-card:hover img {
-            transform: scale(1.06);
+            transform: scale(1.08);
         }
     </style>
 </head>
-<body class="loader-active">
+<body class="loader-locked">
 
-    <!-- 🎬 شاشة ترحيب البداية (The Intro Loader) -->
+    <!-- 🎬 تأثير شاشة ترحيب البداية (The Intro Loader) -->
     <div id="intro-loader" class="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center">
-        <div class="relative p-6 rounded-3xl border-4 bg-white animate-pulse-glow">
-            <!-- اللوجو يلتف لفة ثلاثية الأبعاد مرنة بالداخل والنبض يضيء الحواف الكحلية -->
-            <img src="https://files.catbox.moe/z7c7hw.jpeg" alt="AF Logo" class="w-36 h-36 md:w-44 md:h-44 object-contain rounded-2xl animate-cube-3d">
+        <div class="relative p-6 rounded-3xl border-4 bg-white pulse-border-navy">
+            <!-- اللوجو يدور لفة ثلاثية الأبعاد مرنة مثل مكعب الروبيك بداخل الحواف الكحلية -->
+            <img src="https://files.catbox.moe/z7c7hw.jpeg" alt="AF TECH MATH Logo" class="w-32 h-32 md:w-44 md:h-44 object-contain rounded-2xl cube-3d-animation">
         </div>
-        <div class="mt-8 text-center">
-            <h2 class="text-2xl font-black text-[#0A192F] tracking-wide">AF Corporate Hub</h2>
-            <p class="text-sm text-orange-500 font-bold mt-2 tracking-widest animate-pulse">جاري تحميل واجهة التميز الصدارة...</p>
+        <div class="mt-8 text-center px-4">
+            <h2 class="text-3xl md:text-4xl font-black text-[#0B192F] tracking-wide">AF TECH MATH</h2>
+            <p class="text-sm text-orange-500 font-bold mt-2 tracking-widest uppercase">الهرم الإعلاني الأكاديمي الشامل</p>
         </div>
     </div>
 
-    <!-- 🌐 الهيكل والمحتوى الرئيسي للشركة -->
-    <div id="main-content" class="opacity-0 transition-opacity duration-1000">
+    <!-- 🌐 واجهة الموقع الرئيسية ومحتويات الهرم الإعلاني -->
+    <div id="main-interface" class="opacity-0 transition-opacity duration-1000 bg-[#060b16]">
         
-        <!-- الهيدر ونظام التنقل الذكي (Sticky Header) -->
-        <header class="bg-[#0A192F]/90 backdrop-blur-md text-white sticky top-0 z-40 shadow-xl border-b border-orange-500/30">
+        <!-- 🏢 شريط التنقل العلوي الفخم -->
+        <header class="bg-[#0B192F]/95 backdrop-blur-md text-white sticky top-0 z-40 shadow-2xl border-b border-orange-500/20">
             <div class="container mx-auto px-6 py-4 flex justify-between items-center">
                 <div class="flex items-center gap-3">
-                    <img src="https://files.catbox.moe/z7c7hw.jpeg" alt="AF Logo" class="w-12 h-12 rounded-xl border border-orange-500 shadow-md">
-                    <span class="text-xl font-black tracking-wider text-white">AF <span class="text-orange-500">Corporate Hub</span></span>
+                    <img src="https://files.catbox.moe/z7c7hw.jpeg" alt="AF Logo" class="w-12 h-12 rounded-xl border-2 border-orange-500 shadow-md">
+                    <span class="text-2xl font-black tracking-wider text-white">AF <span class="text-orange-500">TECH MATH</span></span>
                 </div>
                 <nav class="hidden lg:flex space-x-8 space-x-reverse font-bold text-sm">
                     <a href="#hall-of-fame" class="text-slate-300 hover:text-orange-500 transition-colors">📸 معرض الأبطال</a>
                     <a href="#experts" class="text-slate-300 hover:text-orange-500 transition-colors">🧑‍🏫 خبراء الشرح</a>
                     <a href="#gateway-grid" class="text-slate-300 hover:text-orange-500 transition-colors">🔀 بوابات التوجيه</a>
-                    <a href="#contact" class="text-slate-300 hover:text-orange-500 transition-colors">📞 قنوات التواصل</a>
+                    <a href="#contact" class="text-slate-300 hover:text-orange-500 transition-colors">☎️ اتصل بنا</a>
                 </nav>
-                <a href="https://wa.me/201147447990" target="_blank" class="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white px-6 py-2.5 rounded-xl font-black text-sm transition-all shadow-lg flex items-center gap-2">
-                    <i class="fab fa-whatsapp text-lg"></i> احجز مقعداً الآن
-                </a>
+                <div>
+                    <a href="https://wa.me/201147447990" target="_blank" class="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white px-6 py-2.5 rounded-xl font-black text-sm transition-all shadow-lg flex items-center gap-2">
+                        <i class="fab fa-whatsapp text-lg"></i> تسجيل فوري
+                    </a>
+                </div>
             </div>
         </header>
 
-        <!-- 🚀 قسم البانر التعريفي - الهرم الإعلاني للبراند -->
-        <section class="relative py-24 px-6 text-center overflow-hidden bg-gradient-to-b from-[#0A192F] to-[#060b13]">
-            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#f97316_1px,transparent_1px)] [background-size:20px_20px]"></div>
-            <div class="container mx-auto max-w-4xl relative z-10">
-                <span class="bg-orange-500/10 text-orange-400 font-bold px-4 py-2 rounded-full text-xs uppercase tracking-widest border border-orange-500/20">المجمع الإعلاني والتعليمي الأكبر</span>
-                <h1 class="text-4xl md:text-7xl font-black mt-6 leading-tight text-white">الهرم الإعلاني الشامل <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-400 to-orange-500">لبراند AF العالمي</span></h1>
-                <p class="text-slate-300 mt-6 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">منصة المجمع الذكي الفاخرة التي تدمج كافة المسارات والحلول البرمجية والتعليمية المتطورة للبراند، لبناء مهارات الذكاء الفائق وتكنولوجيا المعلومات.</p>
+        <!-- 🚀 القسم التعريفي والترحيب الرئيسي -->
+        <section class="relative py-24 px-6 text-center overflow-hidden bg-gradient-to-b from-[#0b1930] to-[#060b16]">
+            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#f97316_1px,transparent_1px)] [background-size:24px_24px]"></div>
+            <div class="container mx-auto max-w-5xl relative z-10">
+                <span class="bg-orange-500/10 text-orange-400 font-bold px-5 py-2 rounded-full text-xs uppercase tracking-widest border border-orange-500/20">الملتقى الرئيسي العملاق لشركة AF</span>
+                <h1 class="text-4xl md:text-7xl font-black mt-6 leading-tight text-white">الهرم الإعلاني الأكاديمي <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-400 to-orange-500">لبراند AF TECH MATH العالمي</span></h1>
+                <p class="text-slate-300 mt-6 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">المنصة الشاملة الكبرى التي تدمج وتجمع كافة مسارات التميز وبناء العبقرية. من هنا نوجه الجيل القادم نحو صدارة الذكاء والابتكار التكنولوجي والرياضي.</p>
                 
-                <div class="mt-12 flex flex-wrap justify-center gap-5">
-                    <a href="#gateway-grid" class="bg-orange-500 hover:bg-orange-600 text-white font-black px-8 py-4 rounded-2xl shadow-xl transition-all hover:-translate-y-1">تصفح مسارات مجالاتنا</a>
-                    <a href="https://www.facebook.com/share/1DsjavEqtk/" target="_blank" class="bg-white/5 hover:bg-white/10 border border-white/20 text-white font-black px-8 py-4 rounded-2xl transition-all hover:-translate-y-1 flex items-center gap-2">
-                        <i class="fab fa-facebook text-blue-400 text-xl"></i> المنصة الرسمية بفيسبوك
+                <div class="mt-10 flex flex-wrap justify-center gap-5">
+                    <a href="#gateway-grid" class="bg-orange-500 hover:bg-orange-600 text-white font-black px-8 py-4 rounded-2xl shadow-xl transition-all hover:-translate-y-1">تصفح بوابات التوجيه الذكية</a>
+                    <a href="https://www.facebook.com/share/1DsjavEqtk/" target="_blank" class="bg-white/5 hover:bg-white/10 border border-white/10 text-white font-black px-8 py-4 rounded-2xl transition-all hover:-translate-y-1 flex items-center gap-2">
+                        <i class="fab fa-facebook text-blue-400 text-xl"></i> مجتمعنا على فيسبوك
                     </a>
                 </div>
             </div>
         </section>
 
         <!-- 📸 معرض الأبطال والمكرمين (Hall of Fame) -->
-        <section id="hall-of-fame" class="py-24 bg-[#0a1120]">
+        <section id="hall-of-fame" class="py-24 bg-[#0a1122]">
             <div class="container mx-auto px-6">
                 <div class="text-center max-w-2xl mx-auto mb-16">
-                    <h2 class="text-3xl md:text-5xl font-black text-white">🏆 معرض الأبطال والمكرمين</h2>
-                    <div class="w-28 h-1.5 bg-gradient-to-r from-orange-500 to-amber-500 mx-auto mt-4 rounded-full"></div>
-                    <p class="text-slate-400 mt-4 text-base">ألبوم تفاعلي متحرك يستعرض صور طلابنا الأبطال بملابس الأكاديمية الرسمية وهم يتسلمون الكؤوس والشهادات الكبيرة، مما يخطف أعين أولياء الأمور ويزيد الثقة بنسبة 100%.</p>
+                    <h2 class="text-3xl md:text-5xl font-black text-white">📸 معرض الأبطال والمكرمين (Hall of Fame)</h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-orange-500 to-amber-500 mx-auto mt-4 rounded-full"></div>
+                    <p class="text-slate-400 mt-4 text-sm md:text-base">ألبوم تفاعلي لعرض صور الطلاب الحقيقية بملابس الأكاديمية الرسمية وبأيديهم كؤوس الصدارة والتميز لتعزيز ثقة أولياء الأمور بنسبة 100%.</p>
                 </div>
 
-                <!-- شبكة ألبوم الصور التفاعلي مدمج بـ Lightbox مخصص -->
+                <!-- شبكة ألبوم الصور التفاعلي المضبوط بالكامل لتفادي الاختفاء أو التشويه -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     
-                    <!-- صورة 1: كأس التميز -->
-                    <div onclick="openLightbox('https://files.catbox.moe/hh3405.jpg', 'كأس التميز والانفراد الدولي - أكاديمية AF')" class="gallery-card cursor-pointer group bg-[#111a2e] rounded-3xl overflow-hidden shadow-lg border border-slate-800 hover:border-orange-500/40 transition-all">
-                        <div class="overflow-hidden aspect-[4/5] bg-slate-900 relative">
+                    <!-- الصورة المركزية الإضافية المحدثة: لقطة جدارة العبقرية -->
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/uq2vwh.jpeg', 'لقطة التفوق وبناء مهارات الأطفال العبقرية - أكاديمية AF TECH MATH')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-orange-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-900 relative">
+                            <img src="https://files.catbox.moe/uq2vwh.jpeg" alt="لقطة التفوق والأبطال" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#060b16] via-transparent to-transparent opacity-75"></div>
+                            <span class="absolute top-4 right-4 bg-orange-600 text-white font-bold text-xs px-3 py-1.5 rounded-xl shadow-md">الصدارة الأكاديمية</span>
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="font-black text-base md:text-lg text-white group-hover:text-orange-400 transition-colors">منصة التميز الصاعد</h3>
+                            <p class="text-slate-400 text-xs mt-1">بناء المهارات القيادية والذهنية العليا للأطفال</p>
+                        </div>
+                    </div>
+
+                    <!-- صورة 2: كأس التميز -->
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/hh3405.jpg', 'كأس التميز والانفراد الدولي لأكاديمية AF TECH MATH')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-orange-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-900 relative">
                             <img src="https://files.catbox.moe/hh3405.jpg" alt="كأس التميز" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#060b13] via-transparent to-transparent opacity-80"></div>
-                            <span class="absolute top-4 right-4 bg-orange-500 text-white font-bold text-xs px-3 py-1.5 rounded-xl shadow-lg">كأس التميز</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#060b16] via-transparent to-transparent opacity-75"></div>
+                            <span class="absolute top-4 right-4 bg-amber-500 text-white font-bold text-xs px-3 py-1.5 rounded-xl shadow-md">كأس التميز الرسمي</span>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-black text-base text-white group-hover:text-orange-400 transition-colors">كأس التميز والانفراد الدولي</h3>
-                            <p class="text-slate-400 text-xs mt-1">رمز الفوز والصدارة لأبطال الأكاديمية</p>
+                        <div class="p-6 text-center">
+                            <h3 class="font-black text-base md:text-lg text-white group-hover:text-amber-400 transition-colors">كأس التميز والريادة</h3>
+                            <p class="text-slate-400 text-xs mt-1">رمز الانفراد والصدارة الدولية والوطنية لطلابنا</p>
                         </div>
                     </div>
 
-                    <!-- صورة 2: تكريم الطلاب الجماعي -->
-                    <div onclick="openLightbox('https://files.catbox.moe/r06no6.jpg', 'حفل التتويج والتكريم الجماعي لطلاب أكاديمية AF')" class="gallery-card cursor-pointer group bg-[#111a2e] rounded-3xl overflow-hidden shadow-lg border border-slate-800 hover:border-orange-500/40 transition-all">
-                        <div class="overflow-hidden aspect-[4/5] bg-slate-900 relative">
+                    <!-- صورة 3: تكريم الطلاب الجماعي -->
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/r06no6.jpg', 'حفل التكريم والاحتفال الجماعي بالطلاب بملابس الأكاديمية الرسمية')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-orange-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-900 relative">
                             <img src="https://files.catbox.moe/r06no6.jpg" alt="تكريم الطلاب" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#060b13] via-transparent to-transparent opacity-80"></div>
-                            <span class="absolute top-4 right-4 bg-amber-500 text-white font-bold text-xs px-3 py-1.5 rounded-xl shadow-lg">حفل التتويج الرسمي</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#060b16] via-transparent to-transparent opacity-75"></div>
+                            <span class="absolute top-4 right-4 bg-orange-500 text-white font-bold text-xs px-3 py-1.5 rounded-xl shadow-md">التتويج الجماعي الفخم</span>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-black text-base text-white group-hover:text-amber-400 transition-colors">تكريم الطلاب بالملابس الرسمية</h3>
-                            <p class="text-slate-400 text-xs mt-1">فخر واعتزاز أولياء الأمور بمستوى أبنائهم</p>
-                        </div>
-                    </div>
-
-                    <!-- صورة 3: تكريم الطالب الفردي -->
-                    <div onclick="openLightbox('https://files.catbox.moe/3qirc1.jpg', 'منصات التتويج وتسليم الشهادات والدروع الكبرى للطلاب')" class="gallery-card cursor-pointer group bg-[#111a2e] rounded-3xl overflow-hidden shadow-lg border border-slate-800 hover:border-orange-500/40 transition-all">
-                        <div class="overflow-hidden aspect-[4/5] bg-slate-900 relative">
-                            <img src="https://files.catbox.moe/3qirc1.jpg" alt="تكريم الطالب" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#060b13] via-transparent to-transparent opacity-80"></div>
-                            <span class="absolute top-4 right-4 bg-orange-500 text-white font-bold text-xs px-3 py-1.5 rounded-xl shadow-lg">تسليم الشهادات الكبرى</span>
-                        </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-black text-base text-white group-hover:text-orange-400 transition-colors">منصات التتويج الفردية</h3>
-                            <p class="text-slate-400 text-xs mt-1">اعتمادات وشهادات كبرى تعزز الثقة والتميز</p>
+                        <div class="p-6 text-center">
+                            <h3 class="font-black text-base md:text-lg text-white group-hover:text-orange-400 transition-colors">تتويج العباقرة والأبطال</h3>
+                            <p class="text-slate-400 text-xs mt-1">لحظات فخر أولياء الأمور بنتائج ومستويات أبنائهم</p>
                         </div>
                     </div>
 
-                    <!-- صورة 4: جودة التكريم والنجاح المستمر -->
-                    <div onclick="openLightbox('https://files.catbox.moe/hh3405.jpg', 'أكاديمية AF - الجدارة وبناء العبقرية الفائقة بنسبة 100%')" class="gallery-card cursor-pointer group bg-[#111a2e] rounded-3xl overflow-hidden shadow-lg border border-slate-800 hover:border-orange-500/40 transition-all">
-                        <div class="overflow-hidden aspect-[4/5] bg-slate-900 relative">
-                            <img src="https://files.catbox.moe/hh3405.jpg" alt="رمز العبقرية" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#060b13] via-transparent to-transparent opacity-80"></div>
-                            <span class="absolute top-4 right-4 bg-amber-500 text-white font-bold text-xs px-3 py-1.5 rounded-xl shadow-lg">ضمان النجاح</span>
+                    <!-- صورة 4: تكريم طالب عبقري متميز فردي -->
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/3qirc1.jpg', 'منصات التكريم الفردية وشهادات الجدارة الكبرى للطلاب')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-orange-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-900 relative">
+                            <img src="https://files.catbox.moe/3qirc1.jpg" alt="تكريم طالب عبقري" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#060b16] via-transparent to-transparent opacity-75"></div>
+                            <span class="absolute top-4 right-4 bg-amber-500 text-white font-bold text-xs px-3 py-1.5 rounded-xl shadow-md">الشهادات والاعتمادات الكبرى</span>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-black text-base text-white group-hover:text-amber-400 transition-colors">بناء العبقرية والذكاء الفائق</h3>
-                            <p class="text-slate-400 text-xs mt-1">تطوير مستمر للمهارات العقلية والذهنية</p>
+                        <div class="p-6 text-center">
+                            <h3 class="font-black text-base md:text-lg text-white group-hover:text-amber-400 transition-colors">الشهادات والاعتمادات الرسمية</h3>
+                            <p class="text-slate-400 text-xs mt-1">تسليم وثائق التفوق المعتمدة بجدارة كاملة</p>
                         </div>
                     </div>
 
@@ -201,74 +202,82 @@
         </section>
 
         <!-- 🧑‍🏫 قسم المحاضرين وحيوية الشرح (Meet Our Experts) -->
-        <section id="experts" class="py-24 bg-[#060b13]">
+        <section id="experts" class="py-24 bg-[#060b16]">
             <div class="container mx-auto px-6">
                 <div class="text-center max-w-2xl mx-auto mb-20">
                     <h2 class="text-3xl md:text-5xl font-black text-white">🧑‍🏫 قسم المحاضرين وحيوية الشرح</h2>
-                    <div class="w-28 h-1.5 bg-gradient-to-r from-orange-500 to-amber-500 mx-auto mt-4 rounded-full"></div>
-                    <p class="text-slate-400 mt-4 text-base">كروت عريضة تعرض صوراً احترافية حقيقية للمحاضرين أثناء الشرح الفعلي على الشاشات الذكية وفي الندوات الكبرى، لإبراز كفاءة وقوة الطاقم التعليمي لشركة AF.</p>
+                    <div class="w-24 h-1 bg-gradient-to-r from-orange-500 to-amber-500 mx-auto mt-4 rounded-full"></div>
+                    <p class="text-slate-400 mt-4 text-sm md:text-base">إبراز قوة وكفاءة الطاقم التعليمي لشركة AF بالصور الاحترافية أثناء تقديم الشرح الفعلي والتفاعلي المباشر على الشاشات الذكية وخلال المؤتمرات والندوات.</p>
                 </div>
 
-                <!-- الكروت العريضة المتناوبة للمحاضرين والخبراء -->
+                <!-- كروت عريضة واحترافية مخصصة للمحاضرين وشرح المناهج -->
                 <div class="space-y-12 max-w-5xl mx-auto">
                     
-                    <!-- كارت 1: أستاذ أحمد -->
-                    <div class="bg-[#0a1120] rounded-3xl p-6 md:p-8 shadow-xl flex flex-col lg:flex-row items-center gap-8 border-r-4 border-orange-500 hover:border-orange-400 transition-all">
-                        <div class="w-full lg:w-2/5 aspect-[4/3] rounded-2xl overflow-hidden bg-slate-900 shadow-md">
-                            <img src="https://files.catbox.moe/7fob2i.jpg" alt="الأستاذ أحمد" class="w-full h-full object-cover">
+                    <!-- بطاقة 1: أستاذ أحمد -->
+                    <div class="bg-[#0b1122] rounded-3xl p-6 md:p-8 shadow-2xl flex flex-col lg:flex-row items-center gap-8 border-r-4 border-orange-500 transition-all hover:border-orange-400">
+                        <div class="w-full lg:w-5/12 aspect-[4/3] rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
+                            <img src="https://files.catbox.moe/7fob2i.jpg" alt="تقديم المحاضر أستاذ أحمد" class="w-full h-full object-cover">
                         </div>
-                        <div class="w-full lg:w-3/5 text-right">
-                            <span class="text-orange-400 font-bold text-xs bg-orange-500/10 px-4 py-1.5 rounded-xl border border-orange-500/20">تقديم المحاضر</span>
-                            <h3 class="text-2xl md:text-3xl font-black text-white mt-3">الأستاذ أحمد <span class="text-slate-400 text-lg font-medium">(خبير المناهج التفاعلية)</span></h3>
-                            <p class="text-slate-300 mt-4 text-sm md:text-base leading-relaxed">يمتاز الأستاذ أحمد بالقدرة العالية على إدارة العروض والشروح التفاعلية المباشرة، وتوظيف الأنظمة التقنية المتقدمة لتبسيط العمليات الذهنية، مما ينعكس بشكل إيجابي ومباشر على استيعاب وتفاعل الطلاب.</p>
+                        <div class="w-full lg:w-7/12 text-right">
+                            <span class="text-orange-400 font-bold text-xs bg-orange-500/10 px-4 py-1.5 rounded-xl border border-orange-500/20">خبير المناهج التفاعلية</span>
+                            <h3 class="text-2xl md:text-3xl font-black text-white mt-3">الأستاذ أحمد <span class="text-slate-400 text-base md:text-lg font-medium">(تقديم وتأهيل المحاضر)</span></h3>
+                            <p class="text-slate-300 mt-4 text-sm md:text-base leading-relaxed">توضح الصورة الكفاءة والمهارات الاستثنائية للأستاذ أحمد، رائد التدريب الحركي والمنطقي بالأكاديمية، حيث يقدم تجربة شرح مشوقة تجذب اهتمام وعقول الطلاب عبر شاشات العرض الذكية والتفاعلية.</p>
                             <div class="mt-6 flex flex-wrap gap-4 text-slate-400 text-xs">
-                                <span class="bg-slate-900 px-3 py-2 rounded-xl"><i class="fas fa-chalkboard-teacher text-orange-500 ml-1.5"></i> شرح ذكي متكامل</span>
-                                <span class="bg-slate-900 px-3 py-2 rounded-xl"><i class="fas fa-users text-orange-500 ml-1.5"></i> تفاعل طلابي بنسبة 100%</span>
+                                <span class="bg-slate-900 px-3 py-1.5 rounded-xl"><i class="fas fa-desktop text-orange-500 ml-1.5"></i> شرح حي على الشاشات الذكية</span>
+                                <span class="bg-slate-900 px-3 py-1.5 rounded-xl"><i class="fas fa-certificate text-orange-500 ml-1.5"></i> كفاءة تعليمية معتمدة</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- كارت 2: دكتور محمود حلمي والشرح الفعلي -->
-                    <div class="bg-[#0a1120] rounded-3xl p-6 md:p-8 shadow-xl flex flex-col lg:flex-row-reverse items-center gap-8 border-l-4 border-amber-500 hover:border-amber-400 transition-all">
-                        <div class="w-full lg:w-2/5 aspect-[4/3] rounded-2xl overflow-hidden bg-slate-900 shadow-md">
-                            <img src="https://files.catbox.moe/xpkm0b.jpg" alt="الدكتور محمود حلمي" class="w-full h-full object-cover">
+                    <!-- بطاقة 2: دكتور محمود حلمي والشرح الحي -->
+                    <div class="bg-[#0b1122] rounded-3xl p-6 md:p-8 shadow-2xl flex flex-col lg:flex-row-reverse items-center gap-8 border-l-4 border-amber-500 transition-all hover:border-amber-400">
+                        <div class="w-full lg:w-5/12 aspect-[4/3] rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
+                            <img src="https://files.catbox.moe/xpkm0b.jpg" alt="تكريم دكتور محمود حلمي وصورة الشرح" class="w-full h-full object-cover">
                         </div>
-                        <div class="w-full lg:w-3/5 text-right">
-                            <span class="text-amber-400 font-bold text-xs bg-amber-500/10 px-4 py-1.5 rounded-xl border border-amber-500/20">حيوية الشرح الواقعي</span>
-                            <h3 class="text-2xl md:text-3xl font-black text-white mt-3">الدكتور محمود حلمي <span class="text-slate-400 text-lg font-medium">(كفاءة وقوة الطاقم)</span></h3>
-                            <p class="text-slate-300 mt-4 text-sm md:text-base leading-relaxed">يعكس الدكتور محمود حلمي التميز الأكاديمي الحقيقي عبر الشرح الفعلي المباشر على الشاشات الذكية، مدمجاً أدوات التحفيز والتطوير الذهني لضمان بناء الفكر المنطقي المتين لدى كافة المتدربين.</p>
+                        <div class="w-full lg:w-7/12 text-right">
+                            <span class="text-amber-400 font-bold text-xs bg-amber-500/10 px-4 py-1.5 rounded-xl border border-amber-500/20">صورة الشرح والتميز الأكاديمي</span>
+                            <h3 class="text-2xl md:text-3xl font-black text-white mt-3">الدكتور محمود حلمي <span class="text-slate-400 text-base md:text-lg font-medium">(تكريم جدارة المحاضرين)</span></h3>
+                            <p class="text-slate-300 mt-4 text-sm md:text-base leading-relaxed">تعكس اللقطة حيوية وكفاءة الأداء التدريبي للدكتور محمود حلمي، حيث يتم دمج الأساليب والوسائل الذكية المتطورة مع التحفيز والتكريم الفوري للطلاب لبناء ثقتهم وعبقريتهم الكاملة بنسبة 100%.</p>
                             <div class="mt-6 flex flex-wrap gap-4 text-slate-400 text-xs">
-                                <span class="bg-slate-900 px-3 py-2 rounded-xl"><i class="fas fa-chart-bar text-amber-500 ml-1.5"></i> قياس أداء وتطور فوري</span>
-                                <span class="bg-slate-900 px-3 py-2 rounded-xl"><i class="fas fa-award text-amber-500 ml-1.5"></i> شهادات تقدير وجدارة معتمدة</span>
+                                <span class="bg-slate-900 px-3 py-1.5 rounded-xl"><i class="fas fa-chalkboard-teacher text-amber-500 ml-1.5"></i> حيوية وتفاعل مطلق</span>
+                                <span class="bg-slate-900 px-3 py-1.5 rounded-xl"><i class="fas fa-award text-amber-500 ml-1.5"></i> تكريمات متبادلة مستمرة</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- شبكة فرعية داعمة لصور الندوات وتكريم المحاضرين -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-6">
-                        <!-- ندوة -->
-                        <div class="bg-[#0a1120] p-4 rounded-2xl border border-slate-800 text-center">
-                            <img src="https://files.catbox.moe/4cfc3j.jpg" alt="ندوة الشرح" class="w-full h-40 object-cover rounded-xl mb-3">
-                            <h4 class="font-bold text-white text-sm">شرح حي في ندوة كبرى</h4>
-                            <p class="text-slate-400 text-xs mt-1">تفاعل مباشر وجماهيري موسّع</p>
+                    <!-- شبكة لقطات الندوات وتكريمات الكفاءة الإدارية والتعليمية للبراند -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
+                        <!-- ندوة شرح -->
+                        <div class="bg-[#0b1122] p-4 rounded-2xl border border-slate-800 hover:border-orange-500/30 transition-all flex flex-col justify-between">
+                            <img src="https://files.catbox.moe/4cfc3j.jpg" alt="صور شرح في ندوة" class="w-full h-36 object-cover rounded-xl mb-3">
+                            <div>
+                                <h4 class="font-bold text-white text-sm">ندوات الشرح الجماهيرية</h4>
+                                <p class="text-slate-400 text-xs mt-1">لقطات من شرح تفاعلي في ندوة تعريفية مع أولياء الأمور.</p>
+                            </div>
                         </div>
-                        <!-- المحاضرين -->
-                        <div class="bg-[#0a1120] p-4 rounded-2xl border border-slate-800 text-center">
-                            <img src="https://files.catbox.moe/wwx21i.jpg" alt="طاقم المحاضرين" class="w-full h-40 object-cover rounded-xl mb-3">
-                            <h4 class="font-bold text-white text-sm">اجتماع خبراء البراند</h4>
-                            <p class="text-slate-400 text-xs mt-1">تكامل الكفاءات لتقديم أفضل تجربة</p>
+                        <!-- اجتماع المحاضرين -->
+                        <div class="bg-[#0b1122] p-4 rounded-2xl border border-slate-800 hover:border-amber-500/30 transition-all flex flex-col justify-between">
+                            <img src="https://files.catbox.moe/wwx21i.jpg" alt="صورة المحاضرين" class="w-full h-36 object-cover rounded-xl mb-3">
+                            <div>
+                                <h4 class="font-bold text-white text-sm">ملتقى خبراء ومحاضري AF</h4>
+                                <p class="text-slate-400 text-xs mt-1">قوة وتكاتف الطاقم التعليمي لتطوير وتحديث المناهج العلمية.</p>
+                            </div>
                         </div>
-                        <!-- تكريم محاضر -->
-                        <div class="bg-[#0a1120] p-4 rounded-2xl border border-slate-800 text-center">
-                            <img src="https://files.catbox.moe/a3i0c1.jpg" alt="تكريم محاضر مبدع" class="w-full h-40 object-cover rounded-xl mb-3">
-                            <h4 class="font-bold text-white text-sm">تتويج المحاضرين المبدعين</h4>
-                            <p class="text-slate-400 text-xs mt-1">تقدير مستمر لرواد التعليم بالأكاديمية</p>
+                        <!-- تكريم محاضر مبدع -->
+                        <div class="bg-[#0b1122] p-4 rounded-2xl border border-slate-800 hover:border-orange-500/30 transition-all flex flex-col justify-between">
+                            <img src="https://files.catbox.moe/a3i0c1.jpg" alt="تكريم المحاضر" class="w-full h-36 object-cover rounded-xl mb-3">
+                            <div>
+                                <h4 class="font-bold text-white text-sm">تكريم المعلمين المبدعين</h4>
+                                <p class="text-slate-400 text-xs mt-1">تقدير مستمر من الإدارة العليا لجهود طاقم التدريب المتميز.</p>
+                            </div>
                         </div>
                         <!-- كبير المحاضرين -->
-                        <div class="bg-[#0a1120] p-4 rounded-2xl border border-slate-800 text-center">
-                            <img src="https://files.catbox.moe/pjnyax.jpg" alt="كبير المحاضرين" class="w-full h-40 object-cover rounded-xl mb-3">
-                            <h4 class="font-bold text-white text-sm">تكريم كبير المحاضرين</h4>
-                            <p class="text-slate-400 text-xs mt-1">دروع الجدارة والوفاء المهني والتعليمي</p>
+                        <div class="bg-[#0b1122] p-4 rounded-2xl border border-slate-800 hover:border-amber-500/30 transition-all flex flex-col justify-between">
+                            <img src="https://files.catbox.moe/pjnyax.jpg" alt="تكريم كبير المحاضرين" class="w-full h-36 object-cover rounded-xl mb-3">
+                            <div>
+                                <h4 class="font-bold text-white text-sm">تكريم كبير المحاضرين بالشركة</h4>
+                                <p class="text-slate-400 text-xs mt-1">تسليم درع العطاء والوفاء لأعلى الكفاءات والرواد بالأكاديمية.</p>
+                            </div>
                         </div>
                     </div>
 
@@ -277,88 +286,88 @@
         </section>
 
         <!-- 🔀 بوابة التوجيه الذكية (The Gateway Grid) -->
-        <section id="gateway-grid" class="py-24 bg-[#0a1120] relative">
+        <section id="gateway-grid" class="py-24 bg-[#0a1122] relative">
             <div class="container mx-auto px-6">
                 <div class="text-center max-w-2xl mx-auto mb-16">
-                    <h2 class="text-3xl md:text-5xl font-black text-white">🔀 بوابة التوجيه الذكية</h2>
-                    <div class="w-28 h-1.5 bg-gradient-to-r from-orange-500 to-amber-500 mx-auto mt-4 rounded-full"></div>
-                    <p class="text-slate-400 mt-4 text-base">قسم يحتوي على 5 كروت فخمة ومبهرة تمثل مجالات التدريب الأساسية لشركة AF؛ عند الضغط ينقلك الموقع بسلاسة فائقة إلى موقع المجال المستقل تماماً.</p>
+                    <h2 class="text-3xl md:text-5xl font-black text-white">🔀 بوابة التوجيه الذكية (The Gateway Grid)</h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-orange-500 to-amber-500 mx-auto mt-4 rounded-full"></div>
+                    <p class="text-slate-400 mt-4 text-sm md:text-base">يحتوي هذا القسم على 5 كروت فخمة ومبهرة تمثل مجالات التدريب؛ عند ضغط الزائر على أي مجال، ينقله الموقع بسلاسة فائقة إلى موقع المجال المستقل تماماً.</p>
                 </div>
 
-                <!-- شبكة الكروت الـ 5 الفاخرة للبراند -->
+                <!-- شبكة البوابات الخمسة الفاخرة للبراند -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     
-                    <!-- كارت المجال 1 -->
-                    <a href="https://sfman25.github.io/AF-M.A.S-1/" target="_blank" class="gateway-card group border border-slate-800 p-8 rounded-3xl flex flex-col justify-between relative overflow-hidden">
+                    <!-- الكارت الأول: AF M.A.S -->
+                    <a href="https://sfman25.github.io/AF-M.A.S-1/" target="_blank" class="gateway-item group border border-slate-800 p-8 rounded-3xl flex flex-col justify-between relative overflow-hidden">
                         <div>
                             <div class="w-14 h-14 bg-orange-500/10 rounded-2xl flex items-center justify-center text-orange-500 text-2xl mb-6 border border-orange-500/20">
                                 <i class="fas fa-calculator"></i>
                             </div>
-                            <h3 class="text-2xl font-bold text-white group-hover:text-orange-400 transition-colors">برنامج AF M.A.S لتطوير عبقرية الأطفال</h3>
-                            <p class="text-slate-400 mt-3 text-sm leading-relaxed">البرنامج المتقدم لتنشيط خلايا الدماغ وسرعة حل العمليات الحسابية بدون آلة حاسبة لبناء جيل العباقرة المتميزين.</p>
+                            <h3 class="text-2xl font-bold text-white group-hover:text-orange-400 transition-colors">برنامج الحساب الذهني AF M.A.S</h3>
+                            <p class="text-slate-400 mt-3 text-sm leading-relaxed">تنشيط الفصين الأيمن والأيسر للدماغ وتسريع إجراء العمليات الرياضية المعقدة بسرعة البرق وبدون آلة حاسبة.</p>
                         </div>
-                        <div class="mt-8 pt-4 border-t border-slate-800/60 flex items-center justify-between text-sm font-bold text-orange-400">
-                            <span>زيارة المنصة المستقلة للمجال</span>
+                        <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center justify-between text-sm font-bold text-orange-400">
+                            <span>دخول المنصة المستقلة</span>
                             <i class="fas fa-arrow-left transition-transform group-hover:-translate-x-2"></i>
                         </div>
                     </a>
 
-                    <!-- كارت المجال 2 -->
-                    <a href="https://sfman25.github.io/AFRubik-sMastery2/" target="_blank" class="gateway-card group border border-slate-800 p-8 rounded-3xl flex flex-col justify-between relative overflow-hidden">
+                    <!-- الكارت الثاني: AF Rubik's Mastery -->
+                    <a href="https://sfman25.github.io/AFRubik-sMastery2/" target="_blank" class="gateway-item group border border-slate-800 p-8 rounded-3xl flex flex-col justify-between relative overflow-hidden">
                         <div>
                             <div class="w-14 h-14 bg-amber-500/10 rounded-2xl flex items-center justify-center text-amber-500 text-2xl mb-6 border border-amber-500/20">
-                                <i class="fas fa-cube"></i>
+                                <i class="fas fa-cubes"></i>
                             </div>
-                            <h3 class="text-2xl font-bold text-white group-hover:text-amber-400 transition-colors">منصة AF Rubik's Mastery للروبيك</h3>
-                            <p class="text-slate-400 mt-3 text-sm leading-relaxed">احتراف حل مكعب الروبيك السحري وفقاً لأحدث الاستراتيجيات والخوارزميات العالمية لتطوير التفكير والذكاء ثلاثي الأبعاد.</p>
+                            <h3 class="text-2xl font-bold text-white group-hover:text-amber-400 transition-colors">منصة AF Rubik's Mastery</h3>
+                            <p class="text-slate-400 mt-3 text-sm leading-relaxed">احتراف حل مكعب الروبيك السحري بكافة أنماطه وخوارزمياته العالمية لتطوير قوة الملاحظة والحل المنطقي السريع.</p>
                         </div>
-                        <div class="mt-8 pt-4 border-t border-slate-800/60 flex items-center justify-between text-sm font-bold text-amber-400">
-                            <span>زيارة المنصة المستقلة للمجال</span>
+                        <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center justify-between text-sm font-bold text-amber-400">
+                            <span>دخول المنصة المستقلة</span>
                             <i class="fas fa-arrow-left transition-transform group-hover:-translate-x-2"></i>
                         </div>
                     </a>
 
-                    <!-- كارت المجال 3 -->
-                    <a href="https://sfman25.github.io/MATH_VEDIC-3/" target="_blank" class="gateway-card group border border-slate-800 p-8 rounded-3xl flex flex-col justify-between relative overflow-hidden">
+                    <!-- الكارت الثالث: MATH_VEDIC -->
+                    <a href="https://sfman25.github.io/MATH_VEDIC-3/" target="_blank" class="gateway-item group border border-slate-800 p-8 rounded-3xl flex flex-col justify-between relative overflow-hidden">
                         <div>
                             <div class="w-14 h-14 bg-orange-500/10 rounded-2xl flex items-center justify-center text-orange-500 text-2xl mb-6 border border-orange-500/20">
-                                <i class="fas fa-shapes"></i>
+                                <i class="fas fa-square-root-alt"></i>
                             </div>
-                            <h3 class="text-2xl font-bold text-white group-hover:text-orange-400 transition-colors">كورس الرياضيات السريعة الفيديك ميث 3</h3>
-                            <p class="text-slate-400 mt-3 text-sm leading-relaxed">المستوى الثالث المتقدم في حل المعادلات الهندسية والرياضية الكبرى بأساليب عبقرية وسلاسة فائقة تضمن التفوق الفعلي.</p>
+                            <h3 class="text-2xl font-bold text-white group-hover:text-orange-400 transition-colors">رياضيات الفيديك ميث MATH_VEDIC</h3>
+                            <p class="text-slate-400 mt-3 text-sm leading-relaxed">الرياضيات الهندية الفائقة لحل المعادلات والجذور والأشكال الرياضية بطرق عبقرية تثير دهشة الجميع.</p>
                         </div>
-                        <div class="mt-8 pt-4 border-t border-slate-800/60 flex items-center justify-between text-sm font-bold text-orange-400">
-                            <span>زيارة المنصة المستقلة للمجال</span>
+                        <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center justify-between text-sm font-bold text-orange-400">
+                            <span>دخول المنصة المستقلة</span>
                             <i class="fas fa-arrow-left transition-transform group-hover:-translate-x-2"></i>
                         </div>
                     </a>
 
-                    <!-- كارت المجال 4 -->
-                    <a href="https://sfman25.github.io/AF-IQ-Tests-4/" target="_blank" class="gateway-card group border border-slate-800 p-8 rounded-3xl flex flex-col justify-between relative overflow-hidden">
+                    <!-- الكارت الرابع: AF-IQ-Tests -->
+                    <a href="https://sfman25.github.io/AF-IQ-Tests-4/" target="_blank" class="gateway-item group border border-slate-800 p-8 rounded-3xl flex flex-col justify-between relative overflow-hidden">
                         <div>
                             <div class="w-14 h-14 bg-amber-500/10 rounded-2xl flex items-center justify-center text-amber-500 text-2xl mb-6 border border-amber-500/20">
                                 <i class="fas fa-brain"></i>
                             </div>
-                            <h3 class="text-2xl font-bold text-white group-hover:text-amber-400 transition-colors">منصة اختبارات الذكاء الفائق IQ</h3>
-                            <p class="text-slate-400 mt-3 text-sm leading-relaxed">اختبارات ومقاييس ذكاء دولية مقننة لتطوير التفكير النقدي، مهارات التحليل المنطقي والسرعة البديهية للطلاب.</p>
+                            <h3 class="text-2xl font-bold text-white group-hover:text-amber-400 transition-colors">بوابة اختبارات الذكاء AF-IQ-Tests</h3>
+                            <p class="text-slate-400 mt-3 text-sm leading-relaxed">اختبارات ومقاييس ذكاء منظمة عالمياً لقياس مرونة وسرعة الاستنتاج والذكاء البصري والذهني للمتدرب.</p>
                         </div>
-                        <div class="mt-8 pt-4 border-t border-slate-800/60 flex items-center justify-between text-sm font-bold text-amber-400">
-                            <span>زيارة المنصة المستقلة للمجال</span>
+                        <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center justify-between text-sm font-bold text-amber-400">
+                            <span>دخول المنصة المستقلة</span>
                             <i class="fas fa-arrow-left transition-transform group-hover:-translate-x-2"></i>
                         </div>
                     </a>
 
-                    <!-- كارت المجال 5 -->
-                    <a href="https://sfman25.github.io/ICDL-5/" target="_blank" class="gateway-card group border border-slate-800 p-8 rounded-3xl flex flex-col justify-between relative overflow-hidden lg:col-span-1">
+                    <!-- الكارت الخامس: ICDL -->
+                    <a href="https://sfman25.github.io/ICDL-5/" target="_blank" class="gateway-item group border border-slate-800 p-8 rounded-3xl flex flex-col justify-between relative overflow-hidden">
                         <div>
                             <div class="w-14 h-14 bg-orange-500/10 rounded-2xl flex items-center justify-center text-orange-500 text-2xl mb-6 border border-orange-500/20">
                                 <i class="fas fa-laptop-code"></i>
                             </div>
-                            <h3 class="text-2xl font-bold text-white group-hover:text-orange-400 transition-colors">بوابة كورسات الرخص الدولية ICDL</h3>
-                            <p class="text-slate-400 mt-3 text-sm leading-relaxed">تأهيل تكنولوجي شامل على قيادة الحاسب والأنظمة البرمجية لمواكبة سوق العمل ومتطلبات التقدم الأكاديمي الرقمي.</p>
+                            <h3 class="text-2xl font-bold text-white group-hover:text-orange-400 transition-colors">بوابة الرخصة الدولية للحاسب ICDL</h3>
+                            <p class="text-slate-400 mt-3 text-sm leading-relaxed">إتقان علوم الحاسب الآلي والبرامج المكتبية ونظم التشغيل الحديثة لتمكين الجيل تكنولوجياً ورقمياً.</p>
                         </div>
-                        <div class="mt-8 pt-4 border-t border-slate-800/60 flex items-center justify-between text-sm font-bold text-orange-400">
-                            <span>زيارة المنصة المستقلة للمجال</span>
+                        <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center justify-between text-sm font-bold text-orange-400">
+                            <span>دخول المنصة المستقلة</span>
                             <i class="fas fa-arrow-left transition-transform group-hover:-translate-x-2"></i>
                         </div>
                     </a>
@@ -367,49 +376,49 @@
             </div>
         </section>
 
-        <!-- ☎️ قسم التواصل والتفاعل الفوري الأقوى (CTA & Contacts) -->
-        <section id="contact" class="py-20 bg-[#060b13] border-t border-slate-900">
+        <!-- ☎️ أقسام التواصل الفوري المطور والتفاعل الحقيقي (Call to Action) -->
+        <section id="contact" class="py-20 bg-[#060b16] border-t border-slate-900">
             <div class="container mx-auto px-6 text-center max-w-4xl">
-                <h2 class="text-3xl font-black text-white">انضم إلينا الآن واصنع مستقبل عبقرية طفلك اليوم!</h2>
-                <p class="text-slate-400 mt-4 max-w-2xl mx-auto text-sm md:text-base">تواصل مع فروع الإدارة للتسجيل الفوري والاستفسار عن مواعيد الحجوزات للمجموعات والاشتراكات الجديدة.</p>
+                <h2 class="text-3xl font-black text-white">اصنع مستقبل عبقرية طفلك الآن ولا تتردد في الاتصال بنا!</h2>
+                <p class="text-slate-400 mt-4 max-w-2xl mx-auto text-sm md:text-base">موظفي خدمة عملاء أكاديمية AF مستعدون لتلقي اتصالاتكم وحجوزاتكم والإجابة على كافة تساؤلاتكم فوراً.</p>
                 
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12 justify-center items-center">
-                    <!-- واتساب 1 -->
+                    <!-- قناة واتساب 1 -->
                     <a href="https://wa.me/201147447990" target="_blank" class="flex items-center justify-center gap-4 bg-emerald-600/10 hover:bg-emerald-600/20 border border-emerald-500/30 text-white font-bold py-4 px-6 rounded-2xl shadow-lg transition-all hover:-translate-y-1">
                         <i class="fab fa-whatsapp text-3xl text-emerald-500"></i>
                         <div class="text-right">
-                            <span class="block text-xs font-medium text-emerald-400">الدعم الرئيسي والواتساب</span>
+                            <span class="block text-xs font-medium text-emerald-400">الدعم والأقسام الرئيسية</span>
                             <span class="text-sm font-black">01147447990</span>
                         </div>
                     </a>
-                    <!-- واتساب 2 -->
+                    <!-- قناة واتساب 2 -->
                     <a href="https://wa.me/201064038736" target="_blank" class="flex items-center justify-center gap-4 bg-emerald-600/10 hover:bg-emerald-600/20 border border-emerald-500/30 text-white font-bold py-4 px-6 rounded-2xl shadow-lg transition-all hover:-translate-y-1">
                         <i class="fab fa-whatsapp text-3xl text-emerald-500"></i>
                         <div class="text-right">
-                            <span class="block text-xs font-medium text-emerald-400">إدارة الحجوزات المباشرة</span>
+                            <span class="block text-xs font-medium text-emerald-400">إدارة الاشتراكات والتسجيل</span>
                             <span class="text-sm font-black">01064038736</span>
                         </div>
                     </a>
-                    <!-- فيسبوك -->
+                    <!-- فيسبوك البراند الرسمي -->
                     <a href="https://www.facebook.com/share/1DsjavEqtk/" target="_blank" class="flex items-center justify-center gap-4 bg-blue-600/10 hover:bg-blue-600/20 border border-blue-500/30 text-white font-bold py-4 px-6 rounded-2xl shadow-lg transition-all hover:-translate-y-1 sm:col-span-2 md:col-span-1">
                         <i class="fab fa-facebook-f text-2xl text-blue-400"></i>
                         <div class="text-right">
-                            <span class="block text-xs font-medium text-blue-400">الصفحة الرسمية على فيسبوك</span>
-                            <span class="text-sm font-black">اضغط للتفاعل والاشتراك</span>
+                            <span class="block text-xs font-medium text-blue-400">صفحة فيسبوك الرسمية</span>
+                            <span class="text-sm font-black">اضغط للتفاعل والمتابعة</span>
                         </div>
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- 🏢 الفوتر الرسمي للموقع -->
-        <footer class="bg-[#04080e] text-slate-500 py-10 text-sm border-t border-slate-900">
+        <!-- 🏢 الفوتر الرسمي للهرم الأكاديمي الشامل -->
+        <footer class="bg-[#040810] text-slate-500 py-10 text-sm border-t border-slate-900">
             <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
                 <div class="flex items-center gap-3">
                     <img src="https://files.catbox.moe/z7c7hw.jpeg" alt="AF Hub" class="w-10 h-10 rounded-lg border border-orange-500/30">
-                    <p>© 2026 جميع الحقوق محفوظة لـ <span class="text-white font-bold">AF Corporate Hub</span> - الهرم التسويقي والإعلاني المتكامل.</p>
+                    <p>© 2026 جميع الحقوق محفوظة لـ <span class="text-white font-bold">AF TECH MATH</span> - الهرم الإعلاني الأكاديمي للبراند.</p>
                 </div>
-                <div class="flex space-x-4 space-x-reverse text-xl">
+                <div class="flex space-x-4 space-x-reverse text-lg">
                     <a href="https://www.facebook.com/share/1DsjavEqtk/" target="_blank" class="text-slate-400 hover:text-blue-400 transition-colors"><i class="fab fa-facebook"></i></a>
                     <a href="https://wa.me/201147447990" target="_blank" class="text-slate-400 hover:text-emerald-400 transition-colors"><i class="fab fa-whatsapp"></i></a>
                 </div>
@@ -418,49 +427,49 @@
 
     </div>
 
-    <!-- 🌟 نافذة اللايت بوكس لعرض صور التكريم المرفقة بحجم كامل (Lightbox Modal) -->
-    <div id="lightbox-modal" class="fixed inset-0 bg-black/95 z-50 hidden flex-col items-center justify-center p-4">
-        <button onclick="closeLightbox()" class="absolute top-6 left-6 text-white text-3xl hover:text-orange-500 transition-colors cursor-pointer"><i class="fas fa-times"></i></button>
-        <img id="lightbox-img" src="" alt="Enlarged Visual" class="max-w-full max-h-[80vh] object-contain rounded-xl shadow-2xl border border-slate-800">
-        <p id="lightbox-caption" class="text-white font-bold mt-4 text-center text-base bg-[#0A192F] px-6 py-2 rounded-full border border-orange-500/20"></p>
+    <!-- 🌟 نافذة المودال التفاعلي لعرض وتكبير صور الأبطال والتكريمات (Lightbox Modal) -->
+    <div id="image-lightbox" class="fixed inset-0 bg-black/95 z-50 hidden flex-col items-center justify-center p-4">
+        <button onclick="closeImageLightbox()" class="absolute top-6 left-6 text-white text-3xl hover:text-orange-500 transition-colors cursor-pointer"><i class="fas fa-times"></i></button>
+        <img id="lightbox-display-img" src="" alt="Enlarged Visual" class="max-w-full max-h-[82vh] object-contain rounded-xl shadow-2xl border border-slate-800">
+        <p id="lightbox-display-caption" class="text-white font-bold mt-4 text-center text-lg bg-[#0B192F] px-6 py-2 rounded-full border border-orange-500/30 tracking-wide"></p>
     </div>
 
-    <!-- ⚙️ كود الجافا سكريبت لتنسيق العرض الحركي والتحكم الكامل بالشاشات -->
+    <!-- ⚙️ أكواد الجافا سكريبت الذكية للتحكم والتحميل الافتتاحي -->
     <script>
         window.addEventListener('DOMContentLoaded', () => {
             const loader = document.getElementById('intro-loader');
-            const mainContent = document.getElementById('main-content');
+            const mainInterface = document.getElementById('main-interface');
 
-            // إعداد سيناريو الاختفاء السلس لشاشة ترحيب البداية (The Intro Loader)
+            // جدولة شاشة ترحيب البداية (The Intro Loader) لعرض الحركات ثلاثية الأبعاد بدقة
             setTimeout(() => {
-                // تفعيل حركة الانسحاب للأعلى بنعومة بالغة
-                loader.classList.add('loader-slide-up');
+                // تفعيل تأثير انزلاق الشاشة البيضاء للأعلى بنعومة فائقة
+                loader.classList.add('loader-exit-animation');
                 
-                // فتح الواجهة الرئيسية وإلغاء تجميد تمرير الصفحة للمستخدم
-                mainContent.classList.remove('opacity-0');
-                document.body.classList.remove('loader-active');
+                // إظهار واجهة الموقع الرئيسي وفك قفل التمرير بالصفحة
+                mainInterface.classList.remove('opacity-0');
+                document.body.classList.remove('loader-locked');
                 
-                // تدمير عنصر اللودر بعد اكتمال الحركة البرمجية للحفاظ على سرعة وأداء المتصفح
+                // تدمير عنصر اللودر تماماً بعد الاختفاء التام لتوفير موارد المتصفح
                 setTimeout(() => {
                     loader.style.display = 'none';
-                }, 850);
-            }, 3200); // 3.2 ثواني لمنح التأثير الالتفافي والنبض البرتقالي فخامة بصرية كاملة
+                }, 1100);
+            }, 3000); // 3 ثوانٍ كاملة لعرض تفاصيل دوران مكعب الروبيك والنبض الضوئي البرتقالي الحركي
         });
 
-        // دوال نافذة التكبير التفاعلية لصور الألبوم والأبطال
-        function openLightbox(imgSrc, captionText) {
-            const modal = document.getElementById('lightbox-modal');
-            const img = document.getElementById('lightbox-img');
-            const caption = document.getElementById('lightbox-caption');
+        // دالة عرض وتكبير صور المعرض التفاعلي
+        function viewImageLightbox(imgSrc, captionText) {
+            const lightboxModal = document.getElementById('image-lightbox');
+            const displayImg = document.getElementById('lightbox-display-img');
+            const displayCaption = document.getElementById('lightbox-display-caption');
             
-            img.src = imgSrc;
-            caption.innerText = captionText;
-            modal.style.display = 'flex';
+            displayImg.src = imgSrc;
+            displayCaption.innerText = captionText;
+            lightboxModal.style.display = 'flex';
         }
 
-        function closeLightbox() {
-            const modal = document.getElementById('lightbox-modal');
-            modal.style.display = 'none';
+        // دالة إغلاق نافذة التكبير التفاعلية
+        function closeImageLightbox() {
+            document.getElementById('image-lightbox').style.display = 'none';
         }
     </script>
 </body>
