@@ -272,6 +272,71 @@
             </div>
         </section>
 
+        <section id="honors-gallery" class="py-24 bg-[#070e1b]">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-5xl font-black text-white">🏆 معرض التكريمات</h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-sky-500 mx-auto mt-4 rounded-full"></div>
+                    <p class="text-slate-400 mt-4 text-sm md:text-base">ألبوم تفاعلي يعرض صور التكريمات وشهادات التقدير الخاصة بطلابنا المتميزين.</p>
+                </div>
+
+                <div class="max-w-xl mx-auto mb-12">
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/uq2vwh.jpeg', 'معرض التكريمات - صورة رئيسية')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-2xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 relative flex items-center justify-center p-3">
+                            <img src="https://files.catbox.moe/uq2vwh.jpeg" alt="صورة التكريم الرئيسية" class="max-w-full max-h-full object-contain rounded-xl">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#060b16] via-transparent to-transparent opacity-60"></div>
+                            <span class="absolute top-4 right-4 bg-blue-600 text-white font-bold text-xs px-3 py-1.5 rounded-xl shadow-md">أبرز التكريمات</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mb-12">
+                    <button id="toggle-honors-btn" class="bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 text-white font-black px-8 py-3.5 rounded-2xl shadow-lg transition-all cursor-pointer inline-flex items-center gap-2">
+                        <i class="fas fa-images"></i> عرض باقي التكريمات
+                    </button>
+                </div>
+
+                <div id="more-honors-container" class="hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 opacity-0 transition-all duration-700">
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/pjnyax.jpg', 'صورة تكريم')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/pjnyax.jpg" alt="تكريم" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/a3i0c1.jpg', 'صورة تكريم')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/a3i0c1.jpg" alt="تكريم" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/tayjym.jpg', 'صورة تكريم')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/tayjym.jpg" alt="تكريم" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/tic4sx.jpg', 'صورة تكريم')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/tic4sx.jpg" alt="تكريم" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/rj5ruv.jpg', 'صورة تكريم')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/rj5ruv.jpg" alt="تكريم" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/k83noc.jpg', 'صورة تكريم')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/k83noc.jpg" alt="تكريم" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/osndy1.jpg', 'صورة تكريم')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/osndy1.jpg" alt="تكريم" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/zi3ok7.jpg', 'صورة تكريم')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/zi3ok7.jpg" alt="تكريم" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/z4lrs0.jpg', 'صورة تكريم')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/z4lrs0.jpg" alt="تكريم" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/egrk56.jpg', 'صورة تكريم')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/egrk56.jpg" alt="تكريم" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/muvvnn.jpg', 'صورة تكريم')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/muvvnn.jpg" alt="تكريم" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/7byrop.jpg', 'صورة تكريم')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/7byrop.jpg" alt="تكريم" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="experts" class="py-24 bg-[#060b16]">
             <div class="container mx-auto px-6">
                 <div class="text-center max-w-2xl mx-auto mb-20">
@@ -559,6 +624,25 @@
                         compContainer.classList.remove('opacity-100');
                         compContainer.classList.add('hidden');
                         toggleCompBtn.innerHTML = '<i class="fas fa-history"></i> مسابقات سابقة';
+                    }
+                });
+            }
+
+            // نظام تفعيل وإظهار شبكة التكريمات السابقة التفاعلية
+            const toggleHonorsBtn = document.getElementById('toggle-honors-btn');
+            const honorsContainer = document.getElementById('more-honors-container');
+            if (toggleHonorsBtn && honorsContainer) {
+                toggleHonorsBtn.addEventListener('click', () => {
+                    if (honorsContainer.classList.contains('hidden')) {
+                        honorsContainer.classList.remove('hidden');
+                        setTimeout(() => {
+                            honorsContainer.classList.add('opacity-100');
+                        }, 50);
+                        toggleHonorsBtn.innerHTML = '<i class="fas fa-eye-slash"></i> إخفاء التكريمات';
+                    } else {
+                        honorsContainer.classList.remove('opacity-100');
+                        honorsContainer.classList.add('hidden');
+                        toggleHonorsBtn.innerHTML = '<i class="fas fa-images"></i> عرض باقي التكريمات';
                     }
                 });
             }
