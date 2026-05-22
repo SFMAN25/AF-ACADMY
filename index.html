@@ -6,6 +6,7 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
       gtag('config', 'G-1KBYWCJ4V3');
     </script>
 
@@ -41,11 +42,11 @@
         
         @keyframes blueGlowingPulse {
             0%, 100% { 
-                box-shadow: 0 0 20px rgba(14, 165, 233, 0.15);
+                box-shadow: 0 0 20px rgba(14, 165, 233, 0.15); 
                 border-color: #0b192f; 
             }
             50% { 
-                box-shadow: 0 0 50px 25px rgba(14, 165, 233, 0.6);
+                box-shadow: 0 0 50px 25px rgba(14, 165, 233, 0.6); 
                 border-color: #38bdf8; 
             }
         }
@@ -100,451 +101,428 @@
         <header class="bg-[#0B192F]/95 backdrop-blur-md text-white sticky top-0 z-40 shadow-2xl border-b border-sky-500/20">
             <div class="container mx-auto px-6 py-4 flex justify-between items-center">
                 <div class="flex items-center gap-3">
-                    <img src="https://files.catbox.moe/z7c7hw.jpeg" alt="AF TECH MATH Logo" class="w-12 h-12 object-contain rounded-xl border border-sky-500/30">
-                    <span class="text-xl font-black tracking-wider bg-gradient-to-r from-white via-slate-200 to-sky-400 bg-clip-text text-transparent">AF TECH MATH</span>
+                    <img src="https://files.catbox.moe/z7c7hw.jpeg" alt="AF Logo" class="w-12 h-12 rounded-xl border-2 border-sky-500 shadow-md">
+                    <span class="text-2xl font-black tracking-wider text-white">AF <span class="text-sky-400">TECH MATH</span></span>
                 </div>
-                
-                <nav class="hidden xl:flex items-center gap-8 font-semibold text-sm">
-                    <a href="#" class="text-sky-400 border-b-2 border-sky-400 pb-1 transition-colors">🏠 المنصة الرئيسية</a>
-                    <a href="#platforms" class="text-slate-300 hover:text-sky-400 transition-colors">📱 منصات التدريب</a>
-                    <a href="#hall-of-fame" class="text-slate-300 hover:text-sky-400 transition-colors">🏆 لوحة الشرف</a>
-                    <a href="#gallery" class="text-slate-300 hover:text-sky-400 transition-colors">📸 معرض الأبطال</a>
+                <nav class="hidden lg:flex space-x-8 space-x-reverse font-bold text-sm">
+                    <a href="#hall-of-fame" class="text-slate-300 hover:text-sky-400 transition-colors">📸 معرض الأبطال</a>
                     <a href="#experts" class="text-slate-300 hover:text-sky-400 transition-colors">🧑‍🏫 خبراء الشرح</a>
-                    <a href="#lectures" class="text-slate-300 hover:text-sky-400 transition-colors">📚 محاضرات سابقة</a>
-                    <a href="#contact" class="text-slate-300 hover:text-sky-400 transition-colors">📞 تواصل معنا</a>
+                    <a href="#gateway-grid" class="text-slate-300 hover:text-sky-400 transition-colors">🔀 بوابات التوجيه</a>
+                    <a href="#contact" class="text-slate-300 hover:text-sky-400 transition-colors">☎️ اتصل بنا</a>
                 </nav>
-
-                <button id="menu-toggle" class="xl:hidden p-2 text-slate-300 hover:text-white transition-colors focus:outline-none" aria-label="Toggle Menu">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
+                <div class="flex items-center gap-4">
+                    <a href="https://wa.me/201147447990" target="_blank" class="bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 text-white px-5 py-2.5 rounded-xl font-black text-sm transition-all shadow-lg flex items-center gap-2">
+                        <i class="fab fa-whatsapp text-lg"></i> تسجيل فوري
+                    </a>
+                    <button id="mobile-menu-toggle" class="lg:hidden text-white text-2xl focus:outline-none hover:text-sky-400 transition-colors">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
             </div>
-
-            <div id="mobile-menu" class="hidden xl:hidden bg-[#0B192F] border-t border-slate-800 px-6 py-4 space-y-4 shadow-xl">
-                <a href="#" class="block text-sky-400 font-bold">🏠 المنصة الرئيسية</a>
-                <a href="#platforms" class="block text-slate-300 hover:text-sky-400 transition-all">📱 منصات التدريب</a>
-                <a href="#hall-of-fame" class="block text-slate-300 hover:text-sky-400 transition-all">🏆 لوحة الشرف</a>
-                <a href="#gallery" class="block text-slate-300 hover:text-sky-400 transition-all">📸 معرض الأبطال</a>
-                <a href="#experts" class="block text-slate-300 hover:text-sky-400 transition-all">🧑‍🏫 خبراء الشرح</a>
-                <a href="#lectures" class="block text-slate-300 hover:text-sky-400 transition-all">📚 محاضرات سابقة</a>
-                <a href="#contact" class="block text-slate-300 hover:text-sky-400 transition-all">📞 تواصل معنا</a>
+            <div id="mobile-menu" class="hidden lg:hidden bg-[#0B192F] border-t border-sky-500/20 px-6 py-4 space-y-4 font-bold text-sm">
+                <a href="#hall-of-fame" class="block text-slate-300 hover:text-sky-400 transition-colors">📸 معرض الأبطال</a>
+                <a href="#experts" class="block text-slate-300 hover:text-sky-400 transition-colors">🧑‍🏫 خبراء الشرح</a>
+                <a href="#gateway-grid" class="block text-slate-300 hover:text-sky-400 transition-colors">🔀 بوابات التوجيه</a>
+                <a href="#contact" class="block text-slate-300 hover:text-sky-400 transition-colors">☎️ اتصل بنا</a>
             </div>
         </header>
 
-        <section class="relative min-h-[75vh] flex items-center justify-center overflow-hidden py-20 px-6">
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(14,165,233,0.08),transparent_50%)]"></div>
-            <div class="container mx-auto text-center relative z-10 max-w-4xl">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/10 border border-sky-400/30 text-sky-400 text-xs md:text-sm font-bold mb-6 tracking-wide uppercase">
-                    <i class="fas fa-star-of-life animate-spin text-xxs"></i> المنصة الرقمية الموحدة لمجموعة أكاديميات AF
-                </div>
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-[1.25] tracking-tight mb-8">
-                    مرحباً بكم في منصة <br>
-                    <span class="bg-gradient-to-r from-sky-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent">AF TECH MATH</span> الشاملة
-                </h1>
-                <p class="text-slate-400 text-base md:text-xl leading-relaxed max-w-2xl mx-auto mb-12 font-medium">
-                    بوابة التحول الرقمي والتعليم التفاعلي الذكي تحت إشراف وتوجيه <span class="text-sky-400 font-bold">المهندس أحمد</span>. هنا تلتقي عبقرية الحساب الذهني مع التكنولوجيا والبرمجة الحديثة لبناء جيل من المبدعين والعباقرة.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="#platforms" class="w-full sm:w-auto bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-black px-8 py-4 rounded-2xl shadow-xl shadow-sky-500/20 transition-all transform hover:-translate-y-1 text-center flex items-center justify-center gap-2">
-                        <i class="fas fa-rocket"></i> تصفح المنصات التدريبية
-                    </a>
-                    <a href="#hall-of-fame" class="w-full sm:w-auto bg-slate-900/80 hover:bg-slate-800 border border-slate-700 hover:border-slate-600 text-slate-300 hover:text-white font-bold px-8 py-4 rounded-2xl transition-all transform hover:-translate-y-1 text-center">
-                        🏆 لوحة الشرف للأوائل
+        <section class="relative py-24 px-6 text-center overflow-hidden bg-gradient-to-b from-[#0b1930] to-[#060b16]">
+            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#0ea5e9_1px,transparent_1px)] [background-size:24px_24px]"></div>
+            <div class="container mx-auto max-w-5xl relative z-10">
+                <span class="bg-sky-500/10 text-sky-400 font-bold px-5 py-2 rounded-full text-xs uppercase tracking-widest border border-sky-500/20">الملتقى الرئيسي العملاق لشركة AF</span>
+                <h1 class="text-4xl md:text-7xl font-black mt-6 leading-tight text-white">الهرم الإعلاني الشامل <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-blue-400 to-indigo-400">لبراند AF TECH MATH العالمي</span></h1>
+                <p class="text-slate-300 mt-6 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">المنصة الشاملة الكبرى التي تدمج وتجمع كافة مسارات التميز وبناء العبقرية. من هنا نوجه الجيل القادم نحو صدارة الذكاء الابتكاري التكنولوجي والرياضي.</p>
+                
+                <div class="mt-10 flex flex-wrap justify-center gap-5">
+                    <a href="#gateway-grid" class="bg-blue-600 hover:bg-blue-700 text-white font-black px-8 py-4 rounded-2xl shadow-xl transition-all hover:-translate-y-1">تصفح بوابات التوجيه الذكية</a>
+                    <a href="https://www.facebook.com/share/1DsjavEqtk/" target="_blank" class="bg-white/5 hover:bg-white/10 border border-white/10 text-white font-black px-8 py-4 rounded-2xl transition-all hover:-translate-y-1 flex items-center gap-2">
+                        <i class="fab fa-facebook text-blue-400 text-xl"></i> مجتمعنا على فيسبوك
                     </a>
                 </div>
             </div>
         </section>
 
-        <section id="platforms" class="py-24 px-6 border-t border-slate-900 relative">
-            <div class="container mx-auto">
-                <div class="text-center max-w-3xl mx-auto mb-20">
-                    <h2 class="text-3xl md:text-5xl font-black text-white mb-4">📱 المنصات التعليمية المتخصصة</h2>
-                    <div class="w-20 h-1 bg-gradient-to-r from-sky-500 to-transparent mx-auto rounded-full"></div>
-                    <p class="text-slate-400 mt-4 text-sm md:text-base font-medium">اختر وجهتك التعليمية المتخصصة الآن من بين منصاتنا الاحترافية الخمس، وانطلق في رحلة التعلم والتفوق الذكي.</p>
+        <section id="hall-of-fame" class="py-24 bg-[#0a1122]">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-5xl font-black text-white">📸 معرض الأبطال وصدارة البطولات</h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-sky-500 mx-auto mt-4 rounded-full"></div>
+                    <p class="text-slate-400 mt-4 text-sm md:text-base">ألبوم تفاعلي يعرض صور الطلاب الحقيقية بكامل الوضوح والدقة لتعزيز ثقة أولياء الأمور بنسبة 100%.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-                    
-                    <div class="gateway-item rounded-3xl p-8 border border-slate-800 flex flex-col justify-between group">
-                        <div>
-                            <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
-                                <i class="fas fa-calculator"></i>
-                            </div>
-                            <h3 class="text-xl font-black text-white mb-3">منصة الحساب الذهني الفائق</h3>
-                            <p class="text-slate-400 text-sm leading-relaxed mb-6 font-medium">تطوير مهارات الحساب الذهني والعداد الصيني (الآباكس) بسرعات فائقة لتنشيط فصي الدماغ وتطوير التركيز الخارق للأطفال واليافعين.</p>
+                <div class="max-w-xl mx-auto mb-12">
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/uq2vwh.jpeg', 'لقطة التفوق وبناء مهارات الأطفال العبقرية - شركة AF TECH MATH')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-2xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 relative flex items-center justify-center p-3">
+                            <img src="https://files.catbox.moe/uq2vwh.jpeg" alt="لقطة التفوق والأبطال" class="max-w-full max-h-full object-contain rounded-xl">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#060b16] via-transparent to-transparent opacity-60"></div>
+                            <span class="absolute top-4 right-4 bg-blue-600 text-white font-bold text-xs px-3 py-1.5 rounded-xl shadow-md">الصدارة الحالية</span>
                         </div>
-                        <a href="https://af-tech-math-mental.netlify.app" target="_blank" class="w-full bg-amber-500/10 hover:bg-amber-500 text-amber-400 hover:text-white text-sm font-bold py-3.5 px-4 rounded-xl transition-all text-center flex items-center justify-center gap-2 border border-amber-500/20">
-                            الدخول للمنصة <i class="fas fa-external-link-alt text-xs"></i>
-                        </a>
-                    </div>
-
-                    <div class="gateway-item rounded-3xl p-8 border border-slate-800 flex flex-col justify-between group">
-                        <div>
-                            <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
-                                <i class="fas fa-cubes"></i>
-                            </div>
-                            <h3 class="text-xl font-black text-white mb-3">منصة روبيك والذكاء الاصطناعي</h3>
-                            <p class="text-slate-400 text-sm leading-relaxed mb-6 font-medium">احتراف حل مكعبات الروبيك بمختلف أنواعها وأشكالها المعقدة عبر خوارزميات الذكاء الاصطناعي المتقدمة وأساليب التفكير المنطقي الحديثة.</p>
+                        <div class="p-6 text-center">
+                            <h3 class="font-black text-lg text-white group-hover:text-sky-400 transition-colors">منصة التميز الصاعد</h3>
+                            <p class="text-slate-400 text-xs mt-1">بناء المهارات القيادية والذهنية العليا للأطفال</p>
                         </div>
-                        <a href="https://af-tech-math-rubik.netlify.app" target="_blank" class="w-full bg-emerald-500/10 hover:bg-emerald-500 text-emerald-400 hover:text-white text-sm font-bold py-3.5 px-4 rounded-xl transition-all text-center flex items-center justify-center gap-2 border border-emerald-500/20">
-                            الدخول للمنصة <i class="fas fa-external-link-alt text-xs"></i>
-                        </a>
                     </div>
-
-                    <div class="gateway-item rounded-3xl p-8 border border-slate-800 flex flex-col justify-between group">
-                        <div>
-                            <div class="w-14 h-14 rounded-2xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
-                                <i class="fas fa-trophy"></i>
-                            </div>
-                            <h3 class="text-xl font-black text-white mb-3">منصة التحديات والمسابقات العالمية</h3>
-                            <p class="text-slate-400 text-sm leading-relaxed mb-6 font-medium">ساحة المنافسات الحية والتدريبات الشاملة لخوض غمار المسابقات الدولية والمحلية وحصد المراكز الأولى عالمياً ومحلياً بجدارة.</p>
-                        </div>
-                        <a href="https://af-tech-math-challenges.netlify.app" target="_blank" class="w-full bg-sky-500/10 hover:bg-sky-500 text-sky-400 hover:text-white text-sm font-bold py-3.5 px-4 rounded-xl transition-all text-center flex items-center justify-center gap-2 border border-sky-500/20">
-                            الدخول للمنصة <i class="fas fa-external-link-alt text-xs"></i>
-                        </a>
-                    </div>
-
-                    <div class="gateway-item rounded-3xl p-8 border border-slate-800 flex flex-col justify-between group">
-                        <div>
-                            <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <h3 class="text-xl font-black text-white mb-3">منصة البرمجة وتطوير الأنظمة</h3>
-                            <p class="text-slate-400 text-sm leading-relaxed mb-6 font-medium">بناء التفكير البرمجي السليم عبر لغات البرمجة المتطورة وتطوير تطبيقات الويب والأنظمة الذكية المتكاملة وربطها بالهندسة التطبيقية.</p>
-                        </div>
-                        <a href="https://af-tech-math-coding.netlify.app" target="_blank" class="w-full bg-purple-500/10 hover:bg-purple-500 text-purple-400 hover:text-white text-sm font-bold py-3.5 px-4 rounded-xl transition-all text-center flex items-center justify-center gap-2 border border-purple-500/20">
-                            الدخول للمنصة <i class="fas fa-external-link-alt text-xs"></i>
-                        </a>
-                    </div>
-
-                    <div class="gateway-item rounded-3xl p-8 border border-slate-800 flex flex-col justify-between group lg:col-span-1 md:col-span-2 md:max-w-md md:mx-auto lg:max-w-none">
-                        <div>
-                            <div class="w-14 h-14 rounded-2xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
-                                <i class="fas fa-drafting-compass"></i>
-                            </div>
-                            <h3 class="text-xl font-black text-white mb-3">منصة الهندسة والإبداع الرقمي</h3>
-                            <p class="text-slate-400 text-sm leading-relaxed mb-6 font-medium">دمج المفاهيم الهندسية والرياضية بالفنون البصرية والتصميم الرقمي ثلاثي الأبعاد والدوائر الإلكترونية التفاعلية المتقدمة.</p>
-                        </div>
-                        <a href="https://af-tech-math-engineering.netlify.app" target="_blank" class="w-full bg-rose-500/10 hover:bg-rose-500 text-rose-400 hover:text-white text-sm font-bold py-3.5 px-4 rounded-xl transition-all text-center flex items-center justify-center gap-2 border border-rose-500/20">
-                            الدخول للمنصة <i class="fas fa-external-link-alt text-xs"></i>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="hall-of-fame" class="py-24 px-6 bg-[#090e1a] border-t border-slate-900 relative">
-            <div class="container mx-auto">
-                <div class="text-center max-w-3xl mx-auto mb-20">
-                    <h2 class="text-3xl md:text-5xl font-black text-white mb-4">🏆 لوحة الشرف للأبطال المتصدرين</h2>
-                    <div class="w-20 h-1 bg-gradient-to-r from-sky-500 to-transparent mx-auto rounded-full"></div>
-                    <p class="text-slate-400 mt-4 text-sm md:text-base font-medium">نحتفي هنا بنخبة الطلاب المتفوقين الذين حققوا أعلى المستويات وضربوا أروع الأمثلة في الكفاءة والسرعة والتميز الرقمي.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto items-end">
-                    
-                    <div class="bg-[#0b1222] rounded-3xl border border-slate-800 p-6 text-center shadow-xl order-2 md:order-1 relative overflow-hidden transform hover:-translate-y-2 transition-transform">
-                        <div class="absolute inset-x-0 top-0 h-1.5 bg-slate-400"></div>
-                        <div class="relative w-28 h-28 mx-auto mb-6">
-                            <div class="w-full h-full rounded-2xl overflow-hidden border-2 border-slate-400 shadow-lg bg-slate-950 p-1">
-                                <img src="https://files.catbox.moe/3e19g8.jpg" alt="البطل الثاني" class="w-full h-full object-cover rounded-xl">
-                            </div>
-                            <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-slate-400 text-slate-950 font-black text-sm w-7 h-7 flex items-center justify-center rounded-full border-2 border-[#0b1222] shadow-md">2</span>
-                        </div>
-                        <h3 class="font-black text-xl text-white mb-1">البطلة / هناء</h3>
-                        <p class="text-slate-400 text-xs font-semibold mb-4">نائبة الصدارة والأداء الفائق المتكامل</p>
-                        <div class="bg-slate-950/60 rounded-xl py-2 px-4 inline-flex items-center justify-center gap-1.5 border border-slate-800/80">
-                            <i class="fas fa-star text-slate-400 text-xs"></i> <span class="text-slate-200 text-sm font-black">9.8 / 10</span>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0e172a] rounded-3xl border border-sky-500/30 p-8 text-center shadow-2xl shadow-sky-500/5 order-1 md:order-2 relative overflow-hidden transform hover:-translate-y-3 transition-all md:scale-105">
-                        <div class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-amber-400 via-sky-400 to-amber-500"></div>
-                        <div class="absolute top-4 right-4 bg-amber-500 text-slate-950 font-black text-xxs px-2.5 py-1 rounded-lg shadow-md uppercase tracking-wider flex items-center gap-1">
-                            <i class="fas fa-crown text-xxs animate-bounce"></i> الصدارة الحالية
-                        </div>
-                        <div class="relative w-36 h-36 mx-auto mb-6">
-                            <div class="w-full h-full rounded-2xl overflow-hidden border-4 border-amber-400 shadow-2xl bg-slate-950 p-1">
-                                <img src="https://files.catbox.moe/1b6lki.jpg" alt="البطل الأول المتصدر" class="w-full h-full object-cover rounded-xl">
-                            </div>
-                            <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-amber-400 text-slate-950 font-black text-base w-9 h-9 flex items-center justify-center rounded-full border-4 border-[#0e172a] shadow-xl">1</span>
-                        </div>
-                        <h3 class="font-black text-2xl text-white mb-1 tracking-wide">البطل / عمر أحمد</h3>
-                        <p class="text-amber-400 text-xs font-black uppercase tracking-widest mb-4">صاحب المركز الأول واللقب الذهبي بالأكاديمية</p>
-                        <div class="bg-sky-500/10 rounded-xl py-2.5 px-5 inline-flex items-center justify-center gap-1.5 border border-sky-500/20">
-                            <i class="fas fa-award text-amber-400"></i> <span class="text-sky-300 text-sm font-black">10 / 10 الدرجة الكاملة</span>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0b1222] rounded-3xl border border-slate-800 p-6 text-center shadow-xl order-3 md:order-3 relative overflow-hidden transform hover:-translate-y-2 transition-transform">
-                        <div class="absolute inset-x-0 top-0 h-1.5 bg-amber-700/80"></div>
-                        <div class="relative w-28 h-28 mx-auto mb-6">
-                            <div class="w-full h-full rounded-2xl overflow-hidden border-2 border-amber-700/60 shadow-lg bg-slate-950 p-1">
-                                <img src="https://files.catbox.moe/6vow8t.jpg" alt="البطل الثالث" class="w-full h-full object-cover rounded-xl">
-                            </div>
-                            <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-amber-700 text-white font-black text-sm w-7 h-7 flex items-center justify-center rounded-full border-2 border-[#0b1222] shadow-md">3</span>
-                        </div>
-                        <h3 class="font-black text-xl text-white mb-1">البطل / سليم</h3>
-                        <p class="text-slate-400 text-xs font-semibold mb-4">صاحب المركز الثالث والأداء المتميز المستمر</p>
-                        <div class="bg-slate-950/60 rounded-xl py-2 px-4 inline-flex items-center justify-center gap-1.5 border border-slate-800/80">
-                            <i class="fas fa-star text-amber-600 text-xs"></i> <span class="text-slate-200 text-sm font-black">9.5 / 10</span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="gallery" class="py-24 px-6 border-t border-slate-900 relative">
-            <div class="container mx-auto">
-                <div class="text-center max-w-3xl mx-auto mb-20">
-                    <h2 class="text-3xl md:text-5xl font-black text-white mb-4">📸 معرض الأبطال التفاعلي</h2>
-                    <div class="w-20 h-1 bg-gradient-to-r from-sky-500 to-transparent mx-auto rounded-full"></div>
-                    <p class="text-slate-400 mt-4 text-sm md:text-base font-medium">اضغط على أي صورة لتكبيرها بوضوح كامل واستعراض لقطات حية ومفصلة لتكريم وتتويج أبطال الأكاديمية.</p>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-                    
-                    <div class="gallery-card bg-[#0b1222] rounded-2xl overflow-hidden border border-slate-800/80 hover:border-sky-500/40 shadow-xl transition-all flex flex-col justify-between cursor-pointer group" onclick="viewImageLightbox('https://files.catbox.moe/e1nuwf.jpg', 'تتويج وتكريم بطل أكاديمية AF لمستويات الحساب الذهني الفائق')">
-                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-1 flex items-center justify-center">
-                            <img src="https://files.catbox.moe/e1nuwf.jpg" alt="تتويج بطل AF" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500">
-                        </div>
-                        <div class="p-4 border-t border-slate-800/60 bg-slate-950/30">
-                            <h4 class="font-bold text-sm text-white group-hover:text-sky-400 transition-colors">تتويج بطل أكاديمية AF</h4>
-                            <p class="text-slate-400 text-xs mt-1">تكريم رسمي رفيع للأداء الذهني الفائق وحل المسائل المعقدة</p>
-                        </div>
-                    </div>
-
-                    <div class="gallery-card bg-[#0b1222] rounded-2xl overflow-hidden border border-slate-800/80 hover:border-sky-500/40 shadow-xl transition-all flex flex-col justify-between cursor-pointer group" onclick="viewImageLightbox('https://files.catbox.moe/4y3y6a.jpg', 'تكريم أبطال الروبيك والذكاء الاصطناعي من المهندس أحمد')">
-                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-1 flex items-center justify-center">
-                            <img src="https://files.catbox.moe/4y3y6a.jpg" alt="تكريم أبطال الروبيك" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500">
-                        </div>
-                        <div class="p-4 border-t border-slate-800/60 bg-slate-950/30">
-                            <h4 class="font-bold text-sm text-white group-hover:text-sky-400 transition-colors">تكريم أبطال الروبيك والذكاء الاصطناعي</h4>
-                            <p class="text-slate-400 text-xs mt-1">توزيع شهادات وجوائز احتراف خوارزميات الحل السريع للمكعبات</p>
-                        </div>
-                    </div>
-
-                    <div class="gallery-card bg-[#0b1222] rounded-2xl overflow-hidden border border-slate-800/80 hover:border-sky-500/40 shadow-xl transition-all flex flex-col justify-between cursor-pointer group" onclick="viewImageLightbox('https://files.catbox.moe/49f7at.jpg', 'أبطال الحساب الذهني المتميزين أثناء استلام الدروع التذكارية السنوية')">
-                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-1 flex items-center justify-center">
-                            <img src="https://files.catbox.moe/49f7at.jpg" alt="أبطال الدروع التذكارية" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500">
-                        </div>
-                        <div class="p-4 border-t border-slate-800/60 bg-slate-950/30">
-                            <h4 class="font-bold text-sm text-white group-hover:text-sky-400 transition-colors">دروع التميز والإبداع الكبرى</h4>
-                            <p class="text-slate-400 text-xs mt-1">تسليم الدروع السنوية الكبرى للمتفوقين الحاصلين على العلامات الكاملة</p>
-                        </div>
-                    </div>
-
-                    <div class="gallery-card bg-[#0b1222] rounded-2xl overflow-hidden border border-slate-800/80 hover:border-sky-500/40 shadow-xl transition-all flex flex-col justify-between cursor-pointer group" onclick="viewImageLightbox('https://files.catbox.moe/97a5a8.jpg', 'مجموعات متميزة من الطلاب المتفوقين في ساحة الأكاديمية الرسمية')">
-                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-1 flex items-center justify-center">
-                            <img src="https://files.catbox.moe/97a5a8.jpg" alt="مجموعات الطلاب" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500">
-                        </div>
-                        <div class="p-4 border-t border-slate-800/60 bg-slate-950/30">
-                            <h4 class="font-bold text-sm text-white group-hover:text-sky-400 transition-colors">مجموعات التحدي والبطولات</h4>
-                            <p class="text-slate-400 text-xs mt-1">لقطات تذكارية جماعية لأقوى وأمهر المجموعات التدريبية المتصدرة</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="experts" class="py-24 px-6 bg-[#090e1a] border-t border-slate-900 relative">
-            <div class="container mx-auto">
-                <div class="text-center max-w-3xl mx-auto mb-20">
-                    <h2 class="text-3xl md:text-5xl font-black text-white mb-4">🧑‍🏫 خبراء الشرح الفعلي والتفاعلي</h2>
-                    <div class="w-20 h-1 bg-gradient-to-r from-sky-500 to-transparent mx-auto rounded-full"></div>
-                    <p class="text-slate-400 mt-4 text-sm md:text-base font-medium">إبراز قوة وكفاءة الطاقم التعليمي لشركة AF بالصور الاحترافية أثناء تقديم الشرح الفعلي والتفاعلي المباشر على الشاشات الذكية.</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-                    
-                    <div class="bg-[#0b1122] rounded-3xl border border-slate-800 overflow-hidden group shadow-xl hover:border-sky-500/30 transition-all flex flex-col justify-between cursor-pointer" onclick="viewImageLightbox('https://files.catbox.moe/x053k2.jpeg', 'الشرح التفاعلي والوسائل البصرية الحديثة المعتمدة')">
-                        <div class="overflow-hidden aspect-[16/10] bg-slate-950 p-1 flex items-center justify-center">
-                            <img src="https://files.catbox.moe/x053k2.jpeg" alt="الشرح التفاعلي الاحترافي" class="w-full h-full object-cover rounded-2xl group-hover:scale-103 transition-transform duration-500">
-                        </div>
-                        <div class="p-6">
-                            <span class="text-xs font-black text-sky-400 bg-sky-500/10 px-3 py-1.5 rounded-lg border border-sky-500/20 inline-block mb-3">الوسائل الذكية الاحترافية</span>
-                            <h3 class="text-lg font-black text-white group-hover:text-sky-400 transition-colors mb-2">أحدث شاشات العرض والوسائل التفاعلية الذكية</h3>
-                            <p class="text-slate-400 text-sm leading-relaxed font-medium">دمج أساليب العرض المرئي التفاعلي المتقدم مع الشرح المباشر لتبسيط أعقد خوارزميات مكعب روبيك ومسائل الرياضيات الهندية الخارقة.</p>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#0b1122] rounded-3xl border border-slate-800 overflow-hidden group shadow-xl hover:border-sky-500/30 transition-all flex flex-col justify-between cursor-pointer" onclick="viewImageLightbox('https://files.catbox.moe/0vbyh3.jpeg', 'التطوير المستمر للطاقم التعليمي والتدريب الفعلي بالأكاديمية')">
-                        <div class="overflow-hidden aspect-[16/10] bg-slate-950 p-1 flex items-center justify-center">
-                            <img src="https://files.catbox.moe/0vbyh3.jpeg" alt="التطوير الفعلي بالأكاديمية" class="w-full h-full object-cover rounded-2xl group-hover:scale-103 transition-transform duration-500">
-                        </div>
-                        <div class="p-6">
-                            <span class="text-xs font-black text-emerald-400 bg-emerald-500/10 px-3 py-1.5 rounded-lg border border-emerald-500/20 inline-block mb-3">الكفاءة التعليمية العليا</span>
-                            <h3 class="text-lg font-black text-white group-hover:text-emerald-400 transition-colors mb-2">التطبيق العملي المستمر والتوجيه الفردي للطلاب</h3>
-                            <p class="text-slate-400 text-sm leading-relaxed font-medium">إشراف وتوجيه مباشر خطوة بخطوة لضمان استيعاب كافة الفئات العمرية للمفاهيم البرمجية والعمليات الحسابية الذهنية المتقدمة بدقة متناهية.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="lectures" class="py-24 px-6 border-t border-slate-900 relative">
-            <div class="container mx-auto">
-                <div class="text-center max-w-3xl mx-auto mb-12">
-                    <h2 class="text-3xl md:text-5xl font-black text-white mb-4">📚 المحاضرات والأبحاث العلمية</h2>
-                    <div class="w-20 h-1 bg-gradient-to-r from-sky-500 to-transparent mx-auto rounded-full"></div>
-                    <p class="text-slate-400 mt-4 text-sm md:text-base font-medium">استعرض مكتبة المحاضرات السابقة، النماذج التدريبية، والأبحاث التخصصية المعتمدة لتعزيز المحتوى الأكاديمي الشامل للمنصة.</p>
-                </div>
-
-                <div class="text-center mb-16">
-                    <button id="toggle-lectures-btn" class="bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-black px-8 py-4 rounded-2xl shadow-xl shadow-sky-500/10 transition-all transform hover:scale-103 cursor-pointer inline-flex items-center gap-3">
-                        <i class="fas fa-graduation-cap"></i> محاضرات سابقة وأبحاث علمية
+                <div class="text-center mb-12">
+                    <button id="toggle-competitions-btn" class="bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 text-white font-black px-8 py-3.5 rounded-2xl shadow-lg transition-all cursor-pointer inline-flex items-center gap-2">
+                        <i class="fas fa-history"></i> مسابقات سابقة
                     </button>
                 </div>
 
-                <div id="lectures-container" class="hidden opacity-0 transition-all duration-700 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div id="more-competitions-container" class="hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 opacity-0 transition-all duration-700">
                     
-                    <div onclick="viewImageLightbox('https://files.catbox.moe/e1nuwf.jpg', 'محاضرة الحساب الذهني التطبيقية المتقدمة')" class="bg-[#0b1122] p-6 rounded-2xl border border-slate-800 hover:border-sky-500/30 transition-all flex flex-col justify-between cursor-pointer group">
-                        <div>
-                            <div class="w-full h-44 bg-slate-950 rounded-xl overflow-hidden mb-4 p-1 flex items-center justify-center">
-                                <img src="https://files.catbox.moe/e1nuwf.jpg" alt="محاضرة الحساب الذهني" class="w-full h-full object-cover rounded-lg group-hover:scale-102 transition-transform">
-                            </div>
-                            <h4 class="font-black text-base text-white group-hover:text-sky-400 transition-colors mb-2">أبحاث متطورة في تنشيط خلايا المخ عبر العداد</h4>
-                            <p class="text-slate-400 text-xs leading-relaxed font-medium">دراسة ومحاضرة تطبيقية حول دور الحساب الذهني الياباني في رفع مرونة التفكير المنطقي وزيادة سرعة البديهة والتركيز البصري والسمعي الخارق لدى الأطفال.</p>
-                        </div>
-                        <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
-                            <span class="text-xxs font-bold text-sky-400 bg-sky-500/5 px-2.5 py-1 rounded-md border border-sky-500/10">بحث معتمد</span>
-                            <span class="text-slate-500 text-xxs font-medium"><i class="far fa-calendar-alt"></i> مايو 2026</span>
-                        </div>
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/hh3405.jpg', 'كأس التميز والانفراد الدولي لشركة AF TECH MATH')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/hh3405.jpg" alt="كأس التميز" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                        <div class="p-4 text-center"><h4 class="text-sm font-bold text-slate-300">كأس التميز والريادة</h4></div>
                     </div>
 
-                    <div onclick="viewImageLightbox('https://files.catbox.moe/4y3y6a.jpg', 'محاضرة خوارزميات الروبيك التفاعلية')" class="bg-[#0b1122] p-6 rounded-2xl border border-slate-800 hover:border-sky-500/30 transition-all flex flex-col justify-between cursor-pointer group">
-                        <div>
-                            <div class="w-full h-44 bg-slate-950 rounded-xl overflow-hidden mb-4 p-1 flex items-center justify-center">
-                                <img src="https://files.catbox.moe/4y3y6a.jpg" alt="محاضرة خوارزميات الروبيك" class="w-full h-full object-cover rounded-lg group-hover:scale-102 transition-transform">
-                            </div>
-                            <h4 class="font-black text-base text-white group-hover:text-sky-400 transition-colors mb-2">الرياضيات الهندية الفائقة ومكعب الروبيك</h4>
-                            <p class="text-slate-400 text-xs leading-relaxed font-medium">استعراض أساليب الرياضيات الفيدرالية السريعة لحل المعادلات الرياضية المعقدة والجذور والأشكال الهندسية بطرق عبقرية تثير شغف الطلاب ودهشة الجميع.</p>
-                        </div>
-                        <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
-                            <span class="text-xxs font-bold text-emerald-400 bg-emerald-500/5 px-2.5 py-1 rounded-md border border-emerald-500/10">محاضرة سابقة</span>
-                            <span class="text-slate-500 text-xxs font-medium"><i class="far fa-calendar-alt"></i> أبريل 2026</span>
-                        </div>
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/r06no6.jpg', 'حفل التكريم والاحتفال الجماعي بالطلاب بملابس الشركة الرسمية')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/r06no6.jpg" alt="تكريم الطلاب" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                        <div class="p-4 text-center"><h4 class="text-sm font-bold text-slate-300">تتويج العباقرة والأبطال</h4></div>
                     </div>
 
-                    <div onclick="viewImageLightbox('https://files.catbox.moe/x053k2.jpeg', 'بحث التفكير البرمجي السليم وحل المشكلات للأطفال')" class="bg-[#0b1122] p-6 rounded-2xl border border-slate-800 hover:border-sky-500/30 transition-all flex flex-col justify-between cursor-pointer group">
-                        <div>
-                            <div class="w-full h-44 bg-slate-950 rounded-xl overflow-hidden mb-4 p-1 flex items-center justify-center">
-                                <img src="https://files.catbox.moe/x053k2.jpeg" alt="بحث التفكير البرمجي" class="w-full h-full object-cover rounded-lg group-hover:scale-102 transition-transform">
-                            </div>
-                            <h4 class="font-black text-base text-white group-hover:text-sky-400 transition-colors mb-2">تأثير الألعاب الحركية في تحسين مهارات حل المشكلات</h4>
-                            <p class="text-slate-400 text-xs leading-relaxed font-medium">ورقة عمل متخصصة توضح الارتباط الوثيق بين تعلم أساسيات البرمجة والهندسة التطبيقية وتطور القدرات العقلية والتحليلية المتميزة للأطفال في الفئات العمرية المختلفة.</p>
-                        </div>
-                        <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
-                            <span class="text-xxs font-bold text-purple-400 bg-purple-500/5 px-2.5 py-1 rounded-md border border-purple-500/10">ورقة عمل بحثية</span>
-                            <span class="text-slate-500 text-xxs font-medium"><i class="far fa-calendar-alt"></i> مارس 2026</span>
-                        </div>
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/3qirc1.jpg', 'منصات التكريم الفردية وشهادات الجدارة الكبرى للطلاب')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/3qirc1.jpg" alt="تكريم طالب عبقري" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                        <div class="p-4 text-center"><h4 class="text-sm font-bold text-slate-300">الشهادات والاعتمادات الرسمية</h4></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/s7y7fe.jpg', 'لحظات تتويج الأبطال ببطولات AF TECH MATH')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/s7y7fe.jpg" alt="تتويج بطل AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/ujtn7s.jpg', 'احتفال الأبطال بالكؤوس على منصات التتويج')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/ujtn7s.jpg" alt="تتويج بطل AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/6p71gq.jpg', 'لحظات جدارة واستلام شهادات التقدير الرسمية')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/6p71gq.jpg" alt="تتويج بطل AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/e1nuwf.jpg', 'أبطالنا يحصدون الكؤوس على منصة التتويج الدولية')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/e1nuwf.jpg" alt="تتويج بطل AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/fp3nst.jpg', 'فرحة الأبطال بالكؤوس والميداليات الذهبية')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/fp3nst.jpg" alt="تتويج بطل AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/z7wo4o.jpg', 'تتويج الأبطال بالكؤوس على منصة الصدارة للشركة الرسمية')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/z7wo4o.jpg" alt="تتويج بطل AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/h5oo64.jpg', 'احتفال الأبطال بالكؤوس وشهادات التميز الدولية لشركة AF')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/h5oo64.jpg" alt="تتويج بطل AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/acn3tw.jpg', 'منصات التتويج ببطولات الرياضيات الذهنية الرسمية للشركة')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/acn3tw.jpg" alt="تتويج بطل AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/6zhyaf.jpg', 'تتويج الطالب العبقري بالكأس في الحفل الختامي للشركة')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/6zhyaf.jpg" alt="تتويج بطل AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/fegdiz.jpg', 'احتفال الأبطال بالكؤوس في الحفل الختامي للشركة الرسمية')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/fegdiz.jpg" alt="تتويج بطل AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/6yljkl.jpg', 'تتويج البطل بالكأس والميدالية الذهبية في المحافل الدولية')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/6yljkl.jpg" alt="تتويج بطل AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/z9mbof.jpg', 'تتويج البطل بكأس البطولة الدولية للشركة الرسمية')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/z9mbof.jpg" alt="تتويج بطل AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/gdiirl.jpg', 'تتويج الفريق الفائز بالمركز الأول ببطولات الحساب الذهني للشركة الرسمية')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/gdiirl.jpg" alt="تتويج بطل AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/3mf9on.jpg', 'تتويج الأبطال بكأس المركز الأول في بطولات IQ الدولية للشركة')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/3mf9on.jpg" alt="تتويج بطل AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/ec55o4.jpg', 'تتويج البطل بالكأس والميدالية في الحفل الختامي لشركة AF الرسمية')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/ec55o4.jpg" alt="تتويج بطل AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/nrpt4n.jpg', 'تسليم درع التميز والميدالية للبطل في الحفل السنوي للشركة الرسمي')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/nrpt4n.jpg" alt="تتويج بطل AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/wd0ldf.jpg', 'احتفال الطالب العبقري بالكأس والميدالية الذهبية الدولية للشركة')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/wd0ldf.jpg" alt="تتويج بطل AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/esysmn.jpg', 'تتويج البطل بالكأس والميدالية الذهبية بمسابقات ICDL للشركة الدولية')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/esysmn.jpg" alt="تتويج بطل AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/dd75gl.jpg', 'تتويج البطل بالكأس والميدالية الذهبية في المحافل الدولية للشركة الرسمية')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/dd75gl.jpg" alt="تتويج بطل AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/o4qdxn.jpg', 'لحظات جدارة وتسليم الكأس للبطل المتفوق ببطولات العبقرية الذهنية الدولية للشركة الرسمية')" class="gallery-card cursor-pointer group bg-[#111b30] rounded-3xl overflow-hidden shadow-xl border border-slate-800 hover:border-sky-500/40 transition-all flex flex-col justify-between">
+                        <div class="overflow-hidden aspect-[4/3] bg-slate-950 p-2 flex items-center justify-center"><img src="https://files.catbox.moe/o4qdxn.jpg" alt="تتويج بطل AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
                     </div>
 
                 </div>
             </div>
         </section>
 
-        <footer id="contact" class="bg-[#0B192F] text-white border-t border-slate-800 relative pt-20 pb-10 px-6">
-            <div class="container mx-auto max-w-7xl">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
+        <section id="experts" class="py-24 bg-[#060b16]">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-20">
+                    <h2 class="text-3xl md:text-5xl font-black text-white">🧑‍🏫 قسم المحاضرين وحيوية الشرح</h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-sky-500 mx-auto mt-4 rounded-full"></div>
+                    <p class="text-slate-400 mt-4 text-sm md:text-base">إبراز قوة وكفاءة الطاقم التعليمي لشركة AF بالصور الاحترافية أثناء تقديم الشرح الفعلي والتفاعلي المباشر على الشاشات الذكية.</p>
+                </div>
+
+                <div class="space-y-12 max-w-5xl mx-auto mb-16">
+                    <div class="bg-[#0b1122] rounded-3xl p-6 md:p-8 shadow-2xl flex flex-col lg:flex-row items-center gap-8 border-r-4 border-sky-500 transition-all hover:border-sky-400">
+                        <div class="w-full lg:w-5/12 aspect-[4/3] rounded-2xl overflow-hidden bg-slate-950 p-2 flex items-center justify-center shadow-inner">
+                            <img src="https://files.catbox.moe/7fob2i.jpg" alt="تقديم المحاضر المهندس أحمد" class="max-w-full max-h-full object-contain rounded-xl">
+                        </div>
+                        <div class="w-full lg:w-7/12 text-right">
+                            <span class="text-sky-400 font-bold text-xs bg-sky-500/10 px-4 py-1.5 rounded-xl border border-sky-500/20">خبير المناهج التفاعلية</span>
+                            <h3 class="text-2xl md:text-3xl font-black text-white mt-3">المهندس أحمد <span class="text-slate-400 text-base md:text-lg font-medium">(تقديم وتأهيل المحاضر)</span></h3>
+                            <p class="text-slate-300 mt-4 text-sm md:text-base leading-relaxed">توضح الصورة الكفاءة والمهارات الاستثنائية للمهندس أحمد، رائد التدريب الحركي والمنطقي بالشركة، حيث يقدم تجربة شرح مشوقة تجذب اهتمام وعقول الطلاب عبر شاشات العرض الذكية والتفاعلية.</p>
+                            <div class="mt-6 flex flex-wrap gap-4 text-slate-400 text-xs">
+                                <span class="bg-slate-900 px-3 py-1.5 rounded-xl"><i class="fas fa-desktop text-sky-500 ml-1.5"></i> شرح حي على الشاشات الذكية</span>
+                                <span class="bg-slate-900 px-3 py-1.5 rounded-xl"><i class="fas fa-certificate text-sky-500 ml-1.5"></i> كفاءة تعليمية معتمدة</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#0b1122] rounded-3xl p-6 md:p-8 shadow-2xl flex flex-col lg:flex-row-reverse items-center gap-8 border-l-4 border-sky-500 transition-all hover:border-sky-400">
+                        <div class="w-full lg:w-5/12 aspect-[4/3] rounded-2xl overflow-hidden bg-slate-950 p-2 flex items-center justify-center shadow-inner">
+                            <img src="https://files.catbox.moe/s36l41.jpeg" alt="تكريم وصورة الشرح للمهندس أحمد" class="max-w-full max-h-full object-contain rounded-xl">
+                        </div>
+                        <div class="w-full lg:w-7/12 text-right">
+                            <span class="text-sky-400 font-bold text-xs bg-sky-500/10 px-4 py-1.5 rounded-xl border border-sky-500/20">صورة الشرح والتميز الرسمي</span>
+                            <h3 class="text-2xl md:text-3xl font-black text-white mt-3">المهندس أحمد <span class="text-slate-400 text-base md:text-lg font-medium">(تكريم جدارة المحاضرين)</span></h3>
+                            <p class="text-slate-300 mt-4 text-sm md:text-base leading-relaxed">تعكس اللقطة حيوية وكفاءة الأداء التدريبي المباشر للمهندس أحمد، حيث يتم دمج الأساليب والوسائل الذكية المتطورة مع التحفيز والتكريم الفوري للطلاب لبناء ثقتهم وعبقريتهم الكاملة بنسبة 100%.</p>
+                            <div class="mt-6 flex flex-wrap gap-4 text-slate-400 text-xs">
+                                <span class="bg-slate-900 px-3 py-1.5 rounded-xl"><i class="fas fa-chalkboard-teacher text-sky-500 ml-1.5"></i> حيوية وتفاعل مطلق</span>
+                                <span class="bg-slate-900 px-3 py-1.5 rounded-xl"><i class="fas fa-award text-sky-500 ml-1.5"></i> تكريمات متبادلة مستمرة</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="max-w-xl mx-auto mb-12">
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/dpjc6p.jpg', 'ورقة بحثية بعنوان: تأثير الألعاب تحسين مهارات حل المشكلات للأطفال لشركة AF')" class="bg-[#0b1122] p-4 rounded-3xl border border-slate-800 hover:border-sky-500/30 transition-all flex flex-col justify-between cursor-pointer group">
+                        <div class="w-full h-48 bg-slate-950 flex items-center justify-center p-2 rounded-xl mb-3">
+                            <img src="https://files.catbox.moe/dpjc6p.jpg" alt="ورقة بحثية AF" class="max-w-full max-h-full object-contain rounded-xl">
+                        </div>
+                        <div class="text-center">
+                            <h4 class="font-black text-white text-base">ورقة بحثية متخصصة</h4>
+                            <p class="text-slate-400 text-xs mt-1">عنوان: تأثير الألعاب تحسين مهارات حل المشكلات للأطفال</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mb-12">
+                    <button id="toggle-lectures-btn" class="bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 text-white font-black px-8 py-3.5 rounded-2xl shadow-lg transition-all cursor-pointer inline-flex items-center gap-2">
+                        <i class="fas fa-graduation-cap"></i> محاضرات سابقة
+                    </button>
+                </div>
+
+                <div id="more-lectures-container" class="hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 opacity-0 transition-all duration-700">
                     
-                    <div class="space-y-6">
-                        <div class="flex items-center gap-3">
-                            <img src="https://files.catbox.moe/z7c7hw.jpeg" alt="AF TECH MATH Logo" class="w-14 h-14 object-contain rounded-2xl border border-sky-500/30 shadow-xl">
-                            <span class="text-2xl font-black bg-gradient-to-r from-white via-slate-200 to-sky-400 bg-clip-text text-transparent">AF TECH MATH</span>
-                        </div>
-                        <p class="text-slate-400 text-sm leading-relaxed font-medium">
-                            المؤسسة والمنصة الرقمية الرائدة في دمج العلوم الرياضية المتقدمة، الحساب الذهني، تقنيات الذكاء الاصطناعي، والبرمجة والأنظمة الحديثة لبناء جيل متميز رقمياً ومبدع تقنياً.
-                        </p>
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/c6qaej.jpg', 'محاضرة تأثير الرياضيات الذهنية على عقلية الأطفال للشركة الرسمية')" class="bg-[#0b1122] p-4 rounded-2xl border border-slate-800 hover:border-sky-500/30 transition-all flex flex-col justify-between cursor-pointer group">
+                        <div class="w-full h-40 bg-slate-950 flex items-center justify-center p-1 rounded-xl mb-2"><img src="https://files.catbox.moe/c6qaej.jpg" alt="محاضرة AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
                     </div>
 
-                    <div class="space-y-6">
-                        <h4 class="text-lg font-black text-white relative after:content-[''] after:block after:w-10 after:h-0.5 after:bg-sky-400 after:mt-2">📞 قنوات الاتصال والروابط الرسمية</h4>
-                        <div class="space-y-4 text-sm font-medium">
-                            
-                            <a href="https://www.facebook.com/share/12E6U3N7oW/" target="_blank" class="flex items-center gap-3 text-slate-400 hover:text-sky-400 transition-colors group">
-                                <div class="w-9 h-9 rounded-xl bg-blue-600/10 text-blue-400 border border-blue-600/20 flex items-center justify-center text-sm group-hover:scale-110 transition-transform">
-                                    <i class="fab fa-facebook-f"></i>
-                                </div>
-                                <div>
-                                    <span class="block text-xxs text-blue-400 font-bold">صفحة فيسبوك الرسمية</span>
-                                    <span class="text-slate-300 text-xs">أكاديمية AF TECH MATH الرسمية</span>
-                                </div>
-                            </a>
-
-                            <a href="https://www.facebook.com/share/15YgA1T6mC/" target="_blank" class="flex items-center gap-3 text-slate-400 hover:text-emerald-400 transition-colors group">
-                                <div class="w-9 h-9 rounded-xl bg-emerald-600/10 text-emerald-400 border border-emerald-600/20 flex items-center justify-center text-sm group-hover:scale-110 transition-transform">
-                                    <i class="fas fa-user-tie"></i>
-                                </div>
-                                <div>
-                                    <span class="block text-xxs text-emerald-400 font-bold">الاستشاري الهندسي المعتمد</span>
-                                    <span class="text-slate-300 text-xs">التواصل والمتابعة الفنية والاستشارية العليا</span>
-                                </div>
-                            </a>
-
-                        </div>
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/dnluvh.jpg', 'تأثير الرياضيات الذهنية على عقلية الأطفال - كواليس المحاضرة الدولية للشركة')" class="bg-[#0b1122] p-4 rounded-2xl border border-slate-800 hover:border-sky-500/30 transition-all flex flex-col justify-between cursor-pointer group">
+                        <div class="w-full h-40 bg-slate-950 flex items-center justify-center p-1 rounded-xl mb-2"><img src="https://files.catbox.moe/dnluvh.jpg" alt="محاضرة AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
                     </div>
 
-                    <div class="space-y-6">
-                        <h4 class="text-lg font-black text-white relative after:content-[''] after:block after:w-10 after:h-0.5 after:bg-sky-400 after:mt-2">🔗 روابط سريعة</h4>
-                        <div class="grid grid-cols-2 gap-3 text-xs font-semibold text-slate-400">
-                            <a href="#" class="hover:text-sky-400 transition-colors"><i class="fas fa-chevron-left text-xxs pl-1"></i> الرئيسية</a>
-                            <a href="#platforms" class="hover:text-sky-400 transition-colors"><i class="fas fa-chevron-left text-xxs pl-1"></i> منصاتنا</a>
-                            <a href="#hall-of-fame" class="hover:text-sky-400 transition-colors"><i class="fas fa-chevron-left text-xxs pl-1"></i> لوحة الشرف</a>
-                            <a href="#gallery" class="hover:text-sky-400 transition-colors"><i class="fas fa-chevron-left text-xxs pl-1"></i> معرض الأبطال</a>
-                            <a href="#experts" class="hover:text-sky-400 transition-colors"><i class="fas fa-chevron-left text-xxs pl-1"></i> خبراء الشرح</a>
-                            <a href="#lectures" class="hover:text-sky-400 transition-colors"><i class="fas fa-chevron-left text-xxs pl-1"></i> محاضرات سابقة</a>
-                        </div>
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/4yl51z.jpg', 'شرح تفاعلي حي مع طلاب شركة AF في بطولات الرياضيات ذهنية')" class="bg-[#0b1122] p-4 rounded-2xl border border-slate-800 hover:border-sky-500/30 transition-all flex flex-col justify-between cursor-pointer group">
+                        <div class="w-full h-40 bg-slate-950 flex items-center justify-center p-1 rounded-xl mb-2"><img src="https://files.catbox.moe/4yl51z.jpg" alt="شرح مباشر AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/1go1kl.jpg', 'توجيه ومتابعة حيوية للطلاب أثناء شرح المناهج العبقرية الرسمية لشركة AF')" class="bg-[#0b1122] p-4 rounded-2xl border border-slate-800 hover:border-sky-500/30 transition-all flex flex-col justify-between cursor-pointer group">
+                        <div class="w-full h-40 bg-slate-950 flex items-center justify-center p-1 rounded-xl mb-2"><img src="https://files.catbox.moe/1go1kl.jpg" alt="شرح مباشر AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/y43jzf.jpg', 'تفاعل جماهيري موسع في ندوات التعريف بمناهج شركة AF الدولية')" class="bg-[#0b1122] p-4 rounded-2xl border border-slate-800 hover:border-sky-500/30 transition-all flex flex-col justify-between cursor-pointer group">
+                        <div class="w-full h-40 bg-slate-950 flex items-center justify-center p-1 rounded-xl mb-2"><img src="https://files.catbox.moe/y43jzf.jpg" alt="ندوة AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/kwx6g5.jpg', 'ندوة فكرية مع أولياء الأمور حول تأثير مناهج الحساب الذهني الدولية للشركة')" class="bg-[#0b1122] p-4 rounded-2xl border border-slate-800 hover:border-sky-500/30 transition-all flex flex-col justify-between cursor-pointer group">
+                        <div class="w-full h-40 bg-slate-950 flex items-center justify-center p-1 rounded-xl mb-2"><img src="https://files.catbox.moe/kwx6g5.jpg" alt="ندوة AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/aewetx.jpg', 'لقطات من الندوات التعريفية للأطفال العباقرة في المحافل الرسمية الدولية للشركة')" class="bg-[#0b1122] p-4 rounded-2xl border border-slate-800 hover:border-sky-500/30 transition-all flex flex-col justify-between cursor-pointer group">
+                        <div class="w-full h-40 bg-slate-950 flex items-center justify-center p-1 rounded-xl mb-2"><img src="https://files.catbox.moe/aewetx.jpg" alt="ندوة AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/hfqruk.jpg', 'المؤتمرات الدولية واللقاءات الرسمية لشركة AF')" class="bg-[#0b1122] p-4 rounded-2xl border border-slate-800 hover:border-sky-500/30 transition-all flex flex-col justify-between cursor-pointer group">
+                        <div class="w-full h-40 bg-slate-950 flex items-center justify-center p-1 rounded-xl mb-2"><img src="https://files.catbox.moe/hfqruk.jpg" alt="مؤتمر AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
+                    </div>
+
+                    <div onclick="viewImageLightbox('https://files.catbox.moe/33sazx.jpg', 'تفاعل جماهيري موسع في ندوات التعريف بمناهج شركة AF الدولية الرسمية')" class="bg-[#0b1122] p-4 rounded-2xl border border-slate-800 hover:border-sky-500/30 transition-all flex flex-col justify-between cursor-pointer group">
+                        <div class="w-full h-40 bg-slate-950 flex items-center justify-center p-1 rounded-xl mb-2"><img src="https://files.catbox.moe/33sazx.jpg" alt="ندوة AF" class="max-w-full max-h-full object-contain rounded-xl"></div>
                     </div>
 
                 </div>
+            </div>
+        </section>
 
-                <div class="border-t border-slate-800/80 pt-8 text-center text-slate-500 text-xs font-medium">
-                    <p>© 2026 جميع الحقوق محفوظة لشركة ومنصة <span class="text-sky-400/80 font-bold">AF TECH MATH</span> الشاملة | تم التطوير والربط البرمجي بكفاءة وجودة عالية</p>
+        <section id="gateway-grid" class="py-24 bg-[#0a1122] relative">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-5xl font-black text-white">🔀 بوابة التوجيه الذكية (The Gateway Grid)</h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-sky-500 mx-auto mt-4 rounded-full"></div>
+                    <p class="text-slate-400 mt-4 text-sm md:text-base">يحتوي هذا القسم على 5 كروت فخمة ومبهرة تمثل مجالات التدريب؛ عند ضغط الزائر على أي مجال، ينقله الموقع بسلاسة فائقة إلى موقع المجال المستقل تماماً.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    
+                    <a href="https://sfman25.github.io/AF-M.A.S-1/" target="_blank" class="gateway-item group border border-slate-800 p-8 rounded-3xl flex flex-col justify-between relative overflow-hidden">
+                        <div>
+                            <div class="w-14 h-14 bg-sky-500/10 rounded-2xl flex items-center justify-center text-sky-400 text-2xl mb-6 border border-sky-500/20">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white group-hover:text-sky-400 transition-colors">برنامج الحساب الذهني AF M.A.S</h3>
+                            <p class="text-slate-400 mt-3 text-sm leading-relaxed">تنشيط الفصين الأيمن والأيسر للدماغ وتسريع إجراء العمليات الرياضية المعقدة بسرعة البرق وبدون آلة حاسبة.</p>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center justify-between text-sm font-bold text-sky-400">
+                            <span>دخول المنصة المستقلة</span>
+                            <i class="fas fa-arrow-left transition-transform group-hover:-translate-x-2"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://sfman25.github.io/AFRubik-sMastery2/" target="_blank" class="gateway-item group border border-slate-800 p-8 rounded-3xl flex flex-col justify-between relative overflow-hidden">
+                        <div>
+                            <div class="w-14 h-14 bg-sky-500/10 rounded-2xl flex items-center justify-center text-sky-400 text-2xl mb-6 border border-sky-500/20">
+                                <i class="fas fa-cubes"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white group-hover:text-sky-400 transition-colors">منصة AF Rubik's Mastery</h3>
+                            <p class="text-slate-400 mt-3 text-sm leading-relaxed">احتراف حل مكعب الروبيك السحري بكافة أنماطه وخوارزمياته العالمية لتطوير قوة الملاحظة والحل المنطقي السريع.</p>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center justify-between text-sm font-bold text-sky-400">
+                            <span>دخول المنصة المستقلة</span>
+                            <i class="fas fa-arrow-left transition-transform group-hover:-translate-x-2"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://sfman25.github.io/MATH_VEDIC-3/" target="_blank" class="gateway-item group border border-slate-800 p-8 rounded-3xl flex flex-col justify-between relative overflow-hidden">
+                        <div>
+                            <div class="w-14 h-14 bg-sky-500/10 rounded-2xl flex items-center justify-center text-sky-400 text-2xl mb-6 border border-sky-500/20">
+                                <i class="fas fa-square-root-alt"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white group-hover:text-sky-400 transition-colors">الرياضيات الهندية الفيديك ماث MATH_VEDIC</h3>
+                            <p class="text-slate-400 mt-3 text-sm leading-relaxed">الالرياضيات الهندية الفائقة لحل المعادلات والجذور والأشكال الرياضية بطرق عبقرية تثير دهشة الجميع.</p>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center justify-between text-sm font-bold text-sky-400">
+                            <span>دخول المنصة المستقلة</span>
+                            <i class="fas fa-arrow-left transition-transform group-hover:-translate-x-2"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://sfman25.github.io/AF-IQ-Tests-4/" target="_blank" class="gateway-item group border border-slate-800 p-8 rounded-3xl flex flex-col justify-between relative overflow-hidden">
+                        <div>
+                            <div class="w-14 h-14 bg-sky-500/10 rounded-2xl flex items-center justify-center text-sky-400 text-2xl mb-6 border border-sky-500/20">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white group-hover:text-sky-400 transition-colors">بوابة اختبارات الذكاء AF-IQ-Tests</h3>
+                            <p class="text-slate-400 mt-3 text-sm leading-relaxed">اختبارات ومقاييس ذكاء منظمة عالمياً لقياس مرونة وسرعة الاستنتاج والذكاء البصري والذهني للمتدرب.</p>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center justify-between text-sm font-bold text-sky-400">
+                            <span>دخول المنصة المستقلة</span>
+                            <i class="fas fa-arrow-left transition-transform group-hover:-translate-x-2"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://sfman25.github.io/ICDL-5/" target="_blank" class="gateway-item group border border-slate-800 p-8 rounded-3xl flex flex-col justify-between relative overflow-hidden">
+                        <div>
+                            <div class="w-14 h-14 bg-sky-500/10 rounded-2xl flex items-center justify-center text-sky-400 text-2xl mb-6 border border-sky-500/20">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white group-hover:text-sky-400 transition-colors">بوابة الرخصة الدولية للحاسب ICDL</h3>
+                            <p class="text-slate-400 mt-3 text-sm leading-relaxed">إتقان علوم الحاسب الآلي والبرامج المكتبية ونظم التشغيل الحديثة لتمكين الجيل تكنولوجياً ورقمياً.</p>
+                        </div>
+                        <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center justify-between text-sm font-bold text-sky-400">
+                            <span>دخول المنصة المستقلة</span>
+                            <i class="fas fa-arrow-left transition-transform group-hover:-translate-x-2"></i>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-[#060b16] border-t border-slate-900">
+            <div class="container mx-auto px-6 text-center max-w-4xl">
+                <h2 class="text-3xl font-black text-white">اصنع مستقبل عبقرية طفلك الآن ولا تتردد في الاتصال بنا!</h2>
+                <p class="text-slate-400 mt-4 max-w-2xl mx-auto text-sm md:text-base">موظفو خدمة عملاء شركة AF مستعدون لتلقي اتصالاتكم وحجوزاتكم والإجابة على كافة تساؤلاتكم فوراً.</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12 justify-center items-center">
+                    <a href="https://wa.me/201147447990" target="_blank" class="flex items-center justify-center gap-4 bg-emerald-600/10 hover:bg-emerald-600/20 border border-emerald-500/30 text-white font-bold py-4 px-6 rounded-2xl shadow-lg transition-all hover:-translate-y-1">
+                        <i class="fab fa-whatsapp text-3xl text-emerald-500"></i>
+                        <div class="text-right">
+                            <span class="block text-xs font-medium text-emerald-400">الدعم والأقسام الرئيسية</span>
+                            <span class="text-sm font-black">01147447990</span>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/201064038736" target="_blank" class="flex items-center justify-center gap-4 bg-emerald-600/10 hover:bg-emerald-600/20 border border-emerald-500/30 text-white font-bold py-4 px-6 rounded-2xl shadow-lg transition-all hover:-translate-y-1">
+                        <i class="fab fa-whatsapp text-3xl text-emerald-500"></i>
+                        <div class="text-right">
+                            <span class="block text-xs font-medium text-emerald-400">إدارة الاشتراسات والتسجيل</span>
+                            <span class="text-sm font-black">01064038736</span>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/share/1DsjavEqtk/" target="_blank" class="flex items-center justify-center gap-4 bg-blue-600/10 hover:bg-blue-600/20 border border-blue-500/30 text-white font-bold py-4 px-6 rounded-2xl shadow-lg transition-all hover:-translate-y-1 sm:col-span-2 md:col-span-1">
+                        <i class="fab fa-facebook-f text-2xl text-blue-400"></i>
+                        <div class="text-right">
+                            <span class="block text-xs font-medium text-blue-400">صفحة فيسبوك الرسمية</span>
+                            <span class="text-sm font-black">اضغط للتفاعل والمتابعة</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-[#040810] text-slate-500 py-10 text-sm border-t border-slate-900">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="flex items-center gap-3">
+                    <img src="https://files.catbox.moe/z7c7hw.jpeg" alt="AF Hub" class="w-10 h-10 rounded-lg border border-sky-500/30">
+                    <p>© 2026 جميع الحقوق محفوظة لـ <span class="text-white font-bold">AF TECH MATH</span> - الهرم الإعلاني الشامل للشركة.</p>
+                </div>
+                <div class="flex space-x-4 space-x-reverse text-lg">
+                    <a href="https://www.facebook.com/share/1DsjavEqtk/" target="_blank" class="text-slate-400 hover:text-blue-400 transition-colors"><i class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/201147447990" target="_blank" class="text-slate-400 hover:text-emerald-400 transition-colors"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </footer>
 
-        <div id="image-lightbox" class="hidden fixed inset-0 bg-slate-950/95 z-50 flex-col items-center justify-center p-4 backdrop-blur-sm" onclick="closeImageLightbox()">
-            <button class="absolute top-6 right-6 text-slate-400 hover:text-white text-3xl focus:outline-none cursor-pointer p-2 bg-slate-900/50 rounded-full w-12 h-12 flex items-center justify-center border border-slate-800" onclick="closeImageLightbox(); event.stopPropagation();">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="relative max-w-4xl max-h-[75vh] bg-slate-900 p-2 rounded-3xl border border-slate-800 shadow-2xl flex items-center justify-center" onclick="event.stopPropagation();">
-                <img id="lightbox-display-img" src="" alt="Zoomed View" class="max-w-full max-h-[70vh] object-contain rounded-2xl shadow-inner">
-            </div>
-            <div id="lightbox-display-caption" class="text-slate-200 font-bold text-center mt-6 max-w-2xl px-4 text-sm md:text-base leading-relaxed" onclick="event.stopPropagation();"></div>
-        </div>
+    </div>
 
+    <div id="image-lightbox" class="fixed inset-0 bg-black/95 z-50 hidden flex-col items-center justify-center p-4">
+        <button onclick="closeImageLightbox()" class="absolute top-6 left-6 text-white text-3xl hover:text-sky-400 transition-colors cursor-pointer"><i class="fas fa-times"></i></button>
+        <img id="lightbox-display-img" src="" alt="Enlarged Visual" class="max-w-full max-h-[82vh] object-contain rounded-xl shadow-2xl border border-slate-800">
+        <p id="lightbox-display-caption" class="text-white font-bold mt-4 text-center text-lg bg-[#0B192F] px-6 py-2 rounded-full border border-sky-500/30 tracking-wide"></p>
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            
-            // 🎬 دالة التحكم بشاشة الترحيب وتلاشيها الفاخر بعد 3 ثوانٍ كاملة لقراءة الهوية البصرية للشركة
+        window.addEventListener('DOMContentLoaded', () => {
             const loader = document.getElementById('intro-loader');
             const mainInterface = document.getElementById('main-interface');
-            
-            if (loader && mainInterface) {
-                setTimeout(() => {
-                    // تفعيل تأثير انزلاق الشاشة الترحيبية البيضاء للأعلى بنعومة فائقة وبناء ديناميكي
-                    loader.classList.add('loader-exit-animation');
-                    
-                    // إظهار واجهة الموقع الرئيسي وفك قفل التمرير بالصفحة بالكامل للزوار
-                    mainInterface.classList.remove('opacity-0');
-                    document.body.classList.remove('loader-locked');
-                    
-                    // تدمير عنصر اللودر تماماً بعد الاختفاء التام لتوفير موارد المتصفح والتصفح الأسرع
-                    setTimeout(() => {
-                        loader.style.display = 'none';
-                    }, 1100);
-                }, 3000); // 3 ثوانٍ كاملة لعرض تفاصيل دوران شعار الأكاديمية والنبض الضوئي المحيط
-            }
 
-            // 📱 دالة فتح وإغلاق قائمة الهواتف المحمولة المنسدلة التفاعلية بشكل متجاوب وسلس
-            const menuToggle = document.getElementById('menu-toggle');
+            setTimeout(() => {
+                loader.classList.add('loader-exit-animation');
+                mainInterface.classList.remove('opacity-0');
+                document.body.classList.remove('loader-locked');
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 1100);
+            }, 3000);
+
+            const menuToggle = document.getElementById('mobile-menu-toggle');
             const mobileMenu = document.getElementById('mobile-menu');
             
             if (menuToggle && mobileMenu) {
@@ -552,65 +530,71 @@
                     mobileMenu.classList.toggle('hidden');
                     const icon = menuToggle.querySelector('i');
                     if (mobileMenu.classList.contains('hidden')) {
-                        icon.className = 'fas fa-bars text-2xl';
+                        icon.className = 'fas fa-bars';
                     } else {
-                        icon.className = 'fas fa-times text-2xl';
+                        icon.className = 'fas fa-times';
                     }
                 });
 
-                // إغلاق قائمة الهواتف تلقائياً عند الضغط على أي رابط بداخلها للانتقال السلس والمباشر بالأنكورز
                 mobileMenu.querySelectorAll('a').forEach(link => {
                     link.addEventListener('click', () => {
                         mobileMenu.classList.add('hidden');
-                        menuToggle.querySelector('i').className = 'fas fa-bars text-2xl';
+                        menuToggle.querySelector('i').className = 'fas fa-bars';
                     });
                 });
             }
 
-            // 📚 دالة عرض وتدفق قسم المحاضرات السابقة والأبحاث العلمية عند النقر على زر التفعيل
+            // نظام تفعيل وإظهار شبكة المسابقات السابقة التفاعلية
+            const toggleCompBtn = document.getElementById('toggle-competitions-btn');
+            const compContainer = document.getElementById('more-competitions-container');
+            if (toggleCompBtn && compContainer) {
+                toggleCompBtn.addEventListener('click', () => {
+                    if (compContainer.classList.contains('hidden')) {
+                        compContainer.classList.remove('hidden');
+                        setTimeout(() => {
+                            compContainer.classList.add('opacity-100');
+                        }, 50);
+                        toggleCompBtn.innerHTML = '<i class="fas fa-eye-slash"></i> إخفاء المسابقات';
+                    } else {
+                        compContainer.classList.remove('opacity-100');
+                        compContainer.classList.add('hidden');
+                        toggleCompBtn.innerHTML = '<i class="fas fa-history"></i> مسابقات سابقة';
+                    }
+                });
+            }
+
+            // نظام تفعيل وإظهار شبكة المحاضرات السابقة التفاعلية
             const toggleLectBtn = document.getElementById('toggle-lectures-btn');
-            const lectContainer = document.getElementById('lectures-container');
-            
+            const lectContainer = document.getElementById('more-lectures-container');
             if (toggleLectBtn && lectContainer) {
                 toggleLectBtn.addEventListener('click', () => {
                     if (lectContainer.classList.contains('hidden')) {
                         lectContainer.classList.remove('hidden');
-                        // مهلة زمنية صغيرة للسماح للمتصفح بتهيئة التدفق لعرض الأوباسيتي بنعومة فائقة
                         setTimeout(() => {
                             lectContainer.classList.add('opacity-100');
                         }, 50);
-                        toggleLectBtn.innerHTML = '<i class="fas fa-eye-slash"></i> إخفاء المحاضرات والأبحاث العلمية';
+                        toggleLectBtn.innerHTML = '<i class="fas fa-eye-slash"></i> إخفاء المحاضرات';
                     } else {
                         lectContainer.classList.remove('opacity-100');
                         lectContainer.classList.add('hidden');
-                        toggleLectBtn.innerHTML = '<i class="fas fa-graduation-cap"></i> محاضرات سابقة وأبحاث علمية';
+                        toggleLectBtn.innerHTML = '<i class="fas fa-graduation-cap"></i> محاضرات سابقة';
                     }
                 });
             }
         });
 
-        // 📸 دالة عرض وتكبير صور المعرض التفاعلي وإبراز الكابشن والوصف الفني للمودال الشامل للطلاب والأكاديمية
         function viewImageLightbox(imgSrc, captionText) {
             const lightboxModal = document.getElementById('image-lightbox');
             const displayImg = document.getElementById('lightbox-display-img');
             const displayCaption = document.getElementById('lightbox-display-caption');
             
-            if (lightboxModal && displayImg && displayCaption) {
-                displayImg.src = imgSrc;
-                displayCaption.innerText = captionText;
-                lightboxModal.style.display = 'flex';
-                // إخفاء شريط التمرير الرئيسي للموقع أثناء فتح المودال لمنع تشتت المستخدم وتجميد الخلفية
-                document.body.style.overflow = 'hidden';
-            }
+            displayImg.src = imgSrc;
+            displayCaption.innerText = captionText;
+            lightboxModal.style.display = 'flex';
         }
 
-        // 📸 دالة إغلاق نافذة التكبير التفاعلية وإعادة التمرير الطبيعي لصفحة المنصة الرئيسية بسلاسة
         function closeImageLightbox() {
-            const lightboxModal = document.getElementById('image-lightbox');
-            if (lightboxModal) {
-                lightboxModal.style.display = 'none';
-                document.body.style.overflow = '';
-            }
+            document.getElementById('image-lightbox').style.display = 'none';
         }
     </script>
 </body>
