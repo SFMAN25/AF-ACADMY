@@ -1,0 +1,23 @@
+===============================================================================
+                       COMMERCIAL SOFTWARE LICENSE AGREEMENT
+===============================================================================
+Project Name: AF Academy Platforms (Vedic Math / IQ / MAS / Rubik / ICDL)
+Author/Developer: عبدالرحمن محمد فوزي احمد
+GitHub Profile: https://github.com/sfman25
+Release Date: June 2026
+Status: STRICTLY PROPRIETARY & UNPAID DEVELOPMENT STAGE
+
+TERMS AND CONDITIONS:
+1. OWNERSHIP: The Source Code, structure, layout, UI design, and logic implemented 
+   in this directory remain 100% the intellectual and material property of the Author (Abdelrahman Mohamed Fawzy Ahmed).
+2. USE RESTRICTION: The Client or any holder of these files is strictly PROHIBITED 
+   from hosting, deploying, distributing, modifying, or using this software in any 
+   production environment until ALL financial dues are settled and cleared.
+3. INFRINGEMENT AND LAW: Hosting this code without explicit written consent or without 
+   making full contractual payment constitutes intellectual property theft. The Author 
+   reserves the full legal right to initiate digital take-down actions (DMCA requests) 
+   against any hosting provider, and file criminal/civil complaints under Egyptian Law 
+   No. 82 of 2002 regarding Intellectual Property Rights Protection.
+
+For licensing or clearing payments, contact the Developer immediately via GitHub (sfman25).
+===============================================================================
